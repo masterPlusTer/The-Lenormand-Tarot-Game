@@ -1,0 +1,5781 @@
+*,*::before, *::after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box}
+
+
+  :root {
+    --top-color:rgb(126, 7, 126);
+
+    --bg-color:rgb(237, 146, 77);
+
+  }
+
+  .hide {
+    display: none;
+}
+
+
+#tirage {
+  border-radius: 0.7em;
+  list-style: none;
+  width: 40vmin;
+  
+  justify-content: space-around;
+  background-position: center;
+  margin: 1vmin;
+  align-items: center;   
+  }
+  
+  .generalMeaning {
+    font-size: 110%;
+    /* text-align: justify; */
+    text-align-last: left;
+    padding: 0  0  0 5vmin;
+    /* border: 1vmin solid red; */
+  
+  }
+  
+  
+  
+  
+ 
+  
+
+ 
+
+.title{
+
+  font-size: 150%;
+  text-align: center;
+  -webkit-text-stroke-width: thin;
+
+}
+
+
+button {
+  background: none;
+  border:1vmin solid white;
+  border-radius: 5vmin;
+  padding:.5vmin 5vmin;
+  background-color:grey;
+  font-size: 5vmin;
+  cursor: pointer;
+  background-position: center;
+
+align-items: center;   
+justify-content: flex-end; 
+box-shadow: 0 0 .5vmin silver;
+
+}
+
+  .parent {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    /* grid-column-gap: 0px; */
+    /* grid-row-gap: 0px; */
+    /* align-items: baseline; */
+    /* align-content: space-evenly; */
+    /* justify-items: center; */
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    left: 10vmin;
+    position: relative;
+    }
+
+
+ .backCard{
+    overflow:hidden;
+    position:relative;
+  
+    width:100vw;
+  width: 40vmin;
+  height: 80vmin;
+    border:.1vmin solid grey;
+    border-radius: 1vmin;
+    margin:2vmin;
+  }
+
+
+
+
+  .backCardlines{
+    position:absolute;
+
+    top:-30vmin;
+    left:-30vmin;
+
+    background-color:red;
+    width:100vmin;
+    height:150vmin;
+    background: repeating-linear-gradient(0.10turn,transparent,transparent,transparent,transparent, black 2vmin),            repeating-linear-gradient(0.40turn, transparent,transparent,transparent,transparent, black 2vmin),
+    repeating-linear-gradient(0.40turn, transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent, red 9vmin),
+    repeating-linear-gradient(0.10turn, transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent, red 9vmin);
+  }
+  
+  .moon32__shadow {
+    position: absolute;
+    top: 120%;
+    left: 45%;
+  }
+  .moon32__shadow::after {
+    content: "";
+    position: absolute;
+    bottom: -100;
+    left: -50vmin;
+    transform: translateX(-50%);
+    width: 112.5vmin;
+    height: 113.125vmin;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-animation: shadow 50s infinite;
+            animation: shadow 50s infinite;
+  }
+      /*
+     *animate
+        */
+        @-webkit-keyframes anim {
+          0% {
+            transform: translate3d(0, 0, 0);
+          }
+          50% {
+            transform: translate3d(0, 5vmin, 0);
+          }
+          100% {
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        @keyframes anim {
+          0% {
+            transform: translate3d(0, 0, 0);
+          }
+          50% {
+            transform: translate3d(0, 5vmin, 0);
+          }
+          100% {
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        .animate-anim {
+          -webkit-animation-name: anim;
+                  animation-name: anim;
+        }
+        
+        @-webkit-keyframes shadow {
+          0% {
+            transform: translate3d(0, 0, 0) scale(0.9);
+          }
+          50% {
+            transform: translate3d(0, -5vmin, 0) scale(1);
+          }
+          100% {
+            transform: translate3d(0, 0, 0) scale(0.9);
+          }
+        }
+        
+        @keyframes shadow {
+          0% {
+            transform: translate3d(0, 0, 0) scale(0.9);
+          }
+          50% {
+            transform: translate3d(0, -5vmin, 0) scale(1);
+          }
+          100% {
+            transform: translate3d(0, 0, 0) scale(0.9);
+          }
+        }
+        .animate-shadow {
+          -webkit-animation-name: shadow;
+                  animation-name: shadow;
+        }
+ 
+
+  .card{
+    overflow:hidden;
+    position:relative;
+    margin:2vmin;
+
+    width:100vw;
+  width: 40vmin;
+  height: 80vmin;
+    border:1vmin double grey;
+    border-radius: 1vmin;
+    background-image: linear-gradient(355deg,var(--bg-color)52%, var(--top-color)100%);    
+
+  }
+
+  .innerCard
+  {
+
+    display: grid; 
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr;
+    
+    height: 100%;
+      position:absolute;
+      border: .7vmin double grey;
+    
+
+      width: 50%;
+      height: 40%;
+      top:0;
+      left:25%;
+      background-color: white;
+      z-index:100;
+   
+      
+  }
+  
+  #item-0 {
+    border:1.3vmin solid transparent;
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 2;
+    
+ }
+ #item-1 {
+  border:1.7vmin solid transparent; 
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+    -webkit-writing-mode: vertical-rl;
+    
+ }
+ #item-2 {
+  border:1.7vmin solid transparent;    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    
+ }
+ #item-3 {
+  border:1.7vmin solid transparent;    grid-row-start: 2;
+    grid-column-start: 3;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    -webkit-writing-mode: vertical-rl;
+    
+ }
+ #item-4 {
+  border:1.7vmin solid transparent;    grid-row-start: 4;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 2;
+    
+ }
+ #item-5 {
+  border:1.7vmin solid transparent;    grid-row-start: 4;
+    grid-column-start: 3;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+    -webkit-writing-mode: vertical-rl;
+    
+ }
+ #item-6 {
+  border: 1.7vmin solid transparent;
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 2;
+  -webkit-user-modify: read-write-plaintext-only;
+    
+ }
+ #item-7 {
+  border:1.7vmin solid transparent;    grid-row-start: 5;
+    grid-column-start: 3;
+ 
+    grid-row-end: 6;
+    grid-column-end: 4;
+    -webkit-writing-mode: vertical-rl;
+ }
+ #item-8 {
+  border:1.7vmin solid transparent;    grid-row-start: 2;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+   }
+ #item-9 {
+  border:1.7vmin solid transparent;    grid-row-start: 3;
+    grid-column-start: 2;
+ 
+    grid-row-end: 4;
+    grid-column-end: 3;
+  
+ }
+ #item-10 {
+  border:1.7vmin solid transparent;    grid-row-start: 4;
+    grid-column-start: 2;
+ 
+    grid-row-end: 5;
+    grid-column-end: 3;
+  
+ }
+
+ #item-11 {
+    border:1.7vmin solid transparent;  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 2;
+  
+}
+#item-12 {
+    border:1.7vmin solid transparent;  grid-row-start: 3;
+  grid-column-start: 3;
+
+  grid-row-end: 4;
+  grid-column-end: 4;
+  -webkit-writing-mode: vertical-rl;
+}
+  
+
+  .number{
+    position:relative;
+    border: .2vmin solid grey;
+    border-radius:50%;
+    width: 9vmin;
+    height: 9vmin;
+    top:1vmin;
+    left:.2vmin;
+    text-align: center;
+    font-size:7vmin;
+    z-index:10;
+    
+}
+
+.heart24 {
+  top:50vmin;
+    left:12vmin;
+    width: 15.0vmin;
+    height: 15.0vmin;
+    position: absolute;
+    background-color: red;
+   transform: rotate(-45deg);
+  
+   
+  }
+  .heart24:before, .heart24:after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    background-color: inherit;
+    position: absolute;
+    border-radius: 50%;
+    
+  
+  }
+  .heart24:before {
+    top: -7.5vmin;
+    left: 0;
+  }
+  
+  .heart24:after {
+    top: 0;
+    right: -7.5vmin;
+  }
+
+.hearts {
+
+  width: 3.0vmin;
+  height: 3.0vmin;
+  position: absolute;
+  background-color: red;
+ transform: rotate(-45deg);
+
+ 
+}
+.hearts:before, .hearts:after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border: inherit;
+  background-color: inherit;
+  position: absolute;
+  border-radius: 50%;
+  
+
+}
+.hearts:before {
+  top: -1.5vmin;
+  left: 0;
+
+}
+.hearts:after {
+  top: 0;
+  right: -1.5vmin;
+}
+
+
+.diamonds {
+
+  width: 3.5vmin;
+  height: 3.5vmin;
+
+  position: absolute;
+ transform: rotate(-45deg);
+  background-color: red;
+ 
+}
+
+
+.spades {
+
+  width: 2.5vmin;
+  height: 2.5vmin;
+
+  position: absolute;
+  transform: rotate(-45deg);
+  background-color:black;
+      
+}
+    .spades:before, .spades:after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border: inherit;
+  background-color: inherit;
+  position: absolute;
+  transform: rotate(-45deg);
+ }
+.spades:before {
+  left:-1.3vmin;
+  border-radius: 50%;
+        box-shadow: 0vmin 1.8vmin 0 0;
+
+}
+.spades:after {
+  top: 2vmin;
+  right: 1vmin;
+  width: 3vmin;
+  height: 1vmin;
+}
+
+.clubs {
+
+  width: 2vmin;
+  height: 2vmin;
+background-color:black;
+  position: absolute;
+  border-radius:50%;
+ }
+.clubs:before, .clubs:after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border: inherit;
+  background-color: inherit;
+  position: absolute;
+}
+.clubs:after {
+  border-radius: 50%;
+
+  top: 1.5vmin;
+  right: 1.5vmin;
+  box-shadow:3vmin 0vmin 0 0,3vmin .2vmin 0 0 white,0vmin .2vmin 0 0 white;
+}
+
+.clubs:before {
+  width: 3vmin;
+  height: 2.5vmin;
+  top: 1.9vmin;
+  right:-.5vmin;
+
+}
+
+/*BODY PARTS AND THINGS*/
+
+.queenBox{
+  position:absolute;
+  top:-.8vmin;
+  left:2.5vmin;
+}
+
+.kingbox{
+  position:absolute;
+  top:-1vmin;
+  left:2.5vmin;
+}
+
+
+.diamondQ {
+  position: relative;
+  width: calc(2.0vmin/2.5);
+  height: calc(2.0vmin/2.5);
+  transform: rotate(45deg);
+  top: calc(1.7vmin/2.5);
+  left: calc(9vmin/2.5);
+  z-index: 80;    ;
+}
+   
+.diamond-queen-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: calc(1.0vmin/2.5)      solid #1fb67c;
+  border-right: calc(1.0vmin/2.5)      solid #20bc7d;
+  border-bottom: calc(1.0vmin/2.5)      solid #26c893;
+  border-left: calc(1.0vmin/2.5)      solid #55ddb9;
+  filter: drop-shadow(0vmin 0vmin calc(1.0vmin/2.5) rgba(38, 200, 146, 1));
+}
+
+
+
+.crown{
+  background-image: linear-gradient(to bottom,#E6EC09,orange);
+  height: calc(15vmin/2.5);
+  width: calc(20vmin/2.5);
+  position: absolute;
+  top: calc(5vmin/2.5);
+  left: calc(9vmin/2.5);
+
+}
+.crown::before{
+  content:"";
+  position:absolute;
+  height:calc(5vmin/2.5);
+  width:calc(5vmin/2.5);
+  border-radius:50%;
+  background:white;
+  top:calc(-1.5vmin/2.5);
+  box-shadow: 
+  calc(5.2vmin /2.5) calc(.1vmin/2.5) 0 0vmin white,
+  calc(10.2vmin/2.5) calc(.1vmin/2.5) 0 0vmin white,
+  calc(15.2vmin/2.5) calc(.1vmin/2.5) 0 0vmin white;
+
+}
+.crown::after{
+  content:"";
+  position:absolute;
+  height:calc(2vmin/2.5);
+  width:calc(2vmin/2.5);
+  border-radius:50%;
+  background:#E6EC09;
+  top:calc(-.1vmin/2.5);
+  left:calc(-1vmin/2.5);
+  box-shadow: 
+  calc(5.2vmin /2.5)  calc(.1vmin/2.5) 0 0vmin #E6EC09,
+  calc(10.2vmin/2.5)  calc(.1vmin/2.5) 0 0vmin #E6EC09,
+  calc(15.2vmin/2.5)  calc(.1vmin/2.5) 0 0vmin #E6EC09,
+  calc(20vmin  /2.5)  calc(.1vmin/2.5) 0 0vmin #E6EC09;
+}
+
+
+.forhead{
+  background-image: linear-gradient(to bottom,#f0cf05,#E6EC09);
+  height: calc(9vmin /2.5);
+  width: calc(20vmin /2.5);
+  border-left: calc(.1vmin /2.5) solid grey;
+  border-right: calc(.1vmin /2.5) solid grey;
+  position: absolute;
+  top: 0vmin;
+  /* left: calc(9.9vmin/2.5); */
+}
+.bigmouth{
+  position: absolute;
+    top: 42vmin; 
+    right: 9vmin; 
+    width: 4vmin; 
+    height: 2vmin;
+    border-radius: 0 0 60% 60%;
+    background-color:rgb(184, 22, 22);
+    z-index:300000;
+}
+.smallmouth{
+  position: absolute;
+    top: calc(14vmin/2.5)    ; 
+    right: calc(8vmin /2.5)   ; 
+    width: calc(4vmin /2.5)   ; 
+    height: calc(2vmin /2.5)   ;
+    border-radius: 0 0 60% 60%;
+    background-color:rgb(184, 22, 22);
+    z-index:300000;
+}
+
+.beforeEye{
+  background: rgb(236, 212, 212);
+  height: calc(10vmin/2.5);
+  width: calc(10.8vmin/2.5);
+  position: absolute;
+  border-radius: 50% 0 0 0;
+  /* top: 0vmin; */
+  left: calc(9.2vmin/2.5);
+  z-index: 1;
+  border-top: calc(.1vmin/2.5) solid grey;
+  /* border-right: calc(.1vmin/2.5) solid grey; */
+
+}
+
+.beforeEye::before{
+  content: "";
+  background: rgb(236, 212, 212);
+  height: calc(10vmin/2.5);
+  width: calc(10.8vmin/2.5);
+  position: absolute;
+  border-radius: 0 50% 0 0;
+  top: 0vmin;
+  left: calc(-9.4vmin/2.5);
+  border-top: calc(.1vmin/2.5) solid grey;
+  /* border-left: calc(.1vmin/2.5) solid grey; */
+}
+
+
+
+.jackHat{
+  background: brown;
+  height: calc(9vmin /3);
+  width: calc(20vmin /2.5);
+  position: absolute;
+  top: calc(6vmin /3);
+  left: calc(10.7vmin /3);
+  border-radius: 50% 50% 0 0;
+  border-bottom: calc(4vmin /3) solid #BE441B;
+  z-index: 10;
+}
+.riderHat{
+  background: purple;
+  height: calc(9vmin /2.5);
+  width:calc(20vmin /2.5);
+  position: absolute;
+  top: calc(5vmin /2.5);
+  left: calc(9vmin /2.5);
+  border-radius: 50% 50% 0 0;
+  border-bottom:calc(4vmin /2.5) solid grey;
+}
+
+.manHair28{
+  background: black;
+  height: 9vmin;
+  width:20vmin;
+  position: absolute;
+  top:22vmin;
+  left: 9vmin;
+  border-radius: 50% 50% 0 0;
+}
+.manHair28::before{
+  content:"";
+  position:absolute;
+
+
+}
+.queenhair{
+
+  width: calc(15vmin  /2);
+  height: calc(17vmin  /2);
+  background-color: black;
+  position: absolute;
+  top: calc(12vmin/2.5);
+  left: calc(19.5vmin/2.5);
+  border-radius: 50%;
+  /* transform: rotate(20deg); */
+ 
+}
+
+.smallface{
+  background: rgb(236, 212, 212);
+  height: calc(19vmin /2.5);
+  width: calc(20vmin /2.5);
+
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  top: calc(12vmin /2.5);
+  left: calc(9vmin /2.5);
+  z-index: 1;
+
+}
+
+
+
+.bigface{
+  background: rgb(236, 212, 212);
+  height: 19vmin;
+  width:20vmin;
+  border-left: .1vmin solid grey;
+  border-right: .1vmin solid grey;
+  border-radius: 15% 15% 50% 50%;
+  position: absolute;
+  top: 28vmin;
+  left: 9vmin;
+
+}
+
+
+
+
+.queenhair2{
+
+ 
+  width: calc(15vmin  /2);
+  height: calc(17vmin  /2);
+  background-color: black;
+  position: absolute;
+  top: calc(12vmin/2.5);
+  left: calc(19.5vmin/2.5);
+  border-radius: 50%;
+
+  left: calc(0vmin /2.5);
+
+ 
+      }
+
+      .kingAndJackHair{
+    
+        width: calc(20vmin/3);
+        height: calc(15vmin/3);
+        background-color: black;
+        position: absolute;
+        top: calc(19vmin/3);
+        left: calc(21vmin/3);
+        border-radius: 0 15% 15%;
+        transform: rotate(70deg);
+       
+      }
+      .kingAndJackHair2{
+
+       
+        border-radius: 15% 1 0 0;
+        width: calc(20vmin/3);
+        height: calc(15vmin/3);
+        background-color: black;
+        position: absolute;
+        top: calc(19vmin/3);
+        left: 1.5vmin;
+        /* border-radius: inherit; */
+        border-radius: 15%  0 0 15%;
+        transform: rotate(-70deg);
+       
+            }
+
+
+            .riderhair{
+    
+              width: calc(20vmin/2.5);
+              height: calc(15vmin/2.5);
+              background-color: black;
+              position: absolute;
+              top: calc(16.5vmin/2.5);
+              left:calc(15.5vmin/2.5);
+              border-radius: 0 15% 15% ;
+              transform: rotate(70deg);
+             
+            }
+            .riderhair2{
+      
+             
+              width: calc(20vmin/2.5);
+              height: calc(15vmin/2.5);
+              background-color: black;
+              position: absolute;
+              top: calc(16.5vmin/2.5);
+              left:calc(2.5vmin/2.5);
+              border-radius: 15%  0 0;
+              transform: rotate(-70deg);
+             
+                  }
+      
+
+.hairWoman29{
+    
+  width: 17vmin;
+  height: 17vmin;
+  background-color: black;
+  position: absolute;
+  top: 27vmin;
+  left:3vmin;
+  border-radius: 50% ;
+ 
+}
+.hairWoman29::after{
+content: "";
+  width: 7vmin;
+  height: 17vmin;
+  background-color: black;
+  position: absolute;
+  top: 15vmin;
+  left:-2vmin;
+  border-radius: 50% ;
+  transform: rotate(20deg);
+
+}
+
+.hair2Woman29{
+
+ 
+  width: 17vmin;
+  height: 17vmin;
+  background-color: black;
+  position: absolute;
+  top: 27vmin;
+  left:17.5vmin;
+  border-radius: 50%;
+ 
+      }
+      .hair2Woman29::after{
+        content: "";
+                width: 7vmin;
+                height: 17vmin;
+                background-color: black;
+                position: absolute;
+                top: 15vmin;
+                left:12.5vmin;
+                border-radius: 50% ;
+                transform: rotate(-20deg);
+        
+              }
+              .clothesJ{
+    
+                position: absolute;
+                top: 14vmin;
+                /* left: 1vmin; */
+                width: 5vmin;
+                height: 1vmin;
+                left: 1.3vmin;
+        
+                border-radius: 50%  50% 0 0;
+
+              }
+        
+              .clothesJ::after{
+                content: "";
+                position: absolute;
+                top: calc(-5.3vmin /3);
+                left: calc(15vmin /3);
+                width: calc(7vmin /3);
+                height: calc(4vmin /3);
+                background-color: rgb(236 212 212);
+              
+              }
+
+
+              .clothesWOMAN{
+    
+                position: absolute; 
+        
+                top: 47.5vmin; 
+                left: 11vmin;
+                width: 16vmin; 
+                height: 22vmin;
+        
+              border-radius:  50%  50% 0 0;
+              z-index: 1;
+        
+              }
+        
+              .clothesWOMAN::after{
+                content:"";
+                position: absolute; 
+        
+               top: -.8vmin; 
+               left: 6.6vmin;
+               width: 3vmin; 
+               height: 1vmin;
+               background-color: rgb(236, 212, 212);
+              
+        
+              }
+
+
+              .smallmustache{
+                width:calc(4vmin /2.5);
+                height:calc(3.8vmin /2.5);
+                left:calc(6.5vmin /2.5);
+                top:calc(6.0vmin /2.5);
+                border-radius:50%;
+                position: absolute;
+                color:black;
+                box-shadow: calc(-.4vmin /2.5) calc(5.7vmin /2.5) 0 0 currentColor,
+                            calc(3.5vmin /2.5) calc(5.7vmin /2.5) 0 0 currentColor;
+                          
+              }
+              
+              .smallmustache::before{
+                content:"";
+                position:absolute;
+                left: calc(-4vmin /2.5);
+                top:calc(1.7vmin /2.5);
+                width:calc(4.1vmin /2.5);
+                height:calc(8.2vmin /2.5);
+                  border-bottom:solid calc(3.8vmin /2.5) currentColor;
+                border-radius: 0 0 0 100%;
+                transform-origin: right calc(4.1vmin /2.5);
+              }
+              
+              .smallmustache::after{
+                content:"";
+                position:absolute;
+                left:calc(7vmin /2.5);
+                top:calc(1.7vmin /2.5);
+                width:calc(4.1vmin /2.5);
+                height:calc(8.2vmin /2.5);
+                border-bottom: solid calc(3.8vmin /2.5) currentColor;
+                border-radius:0 0 100% 0;
+                transform-origin: left calc(4.1vmin /2.5);
+              }
+              
+              .smallmustache:before{
+                animation: shakeLeft 1s ease-in-out infinite;
+              
+              }
+              .smallmustache:after{
+                animation: shakeRight 1s ease-in-out infinite;
+              
+              }
+              @keyframes shakeLeft{
+                0%{transform:rotate(-50deg);}
+                50%{transform:rotate(-30deg);}
+                100%{transform:rotate(-50deg);}
+              
+              }
+              @keyframes shakeRight{
+                0%{transform:rotate(50deg);}
+                50%{transform:rotate(30deg);}
+                100%{transform:rotate(50deg);}
+              
+              }
+
+
+              .bigmustache{
+                width:4vmin;
+                height:3.8vmin;
+                left:6.5vmin;
+                top:6.0vmin;
+                border-radius:50%;
+                position: absolute;
+                color:black;
+                box-shadow: -.4vmin 5.7vmin 0 0 currentColor,
+                            3.5vmin 5.7vmin 0 0 currentColor;
+                          
+              }
+              
+              .bigmustache::before{
+                content:"";
+                position:absolute;
+                left: -4vmin;
+                top:1.7vmin;
+                width:4.1vmin;
+                height:8.2vmin;
+                  border-bottom:solid 3.8vmin currentColor;
+                border-radius: 0 0 0 100%;
+                transform-origin: right 4.1vmin;
+              }
+              
+              .bigmustache::after{
+                content:"";
+                position:absolute;
+                left:7vmin;
+                top:1.7vmin;
+                width:4.1vmin;
+                height:8.2vmin;
+                border-bottom: solid 3.8vmin currentColor;
+                border-radius:0 0 100% 0;
+                transform-origin: left 4.1vmin;
+              }
+              
+              .bigmustache:before{
+                animation: shakeLeft 1s ease-in-out infinite;
+              
+              }
+              .bigmustache:after{
+                animation: shakeRight 1s ease-in-out infinite;
+              
+              }
+              @keyframes shakeLeft{
+                0%{transform:rotate(-50deg);}
+                50%{transform:rotate(-30deg);}
+                100%{transform:rotate(-50deg);}
+              
+              }
+              @keyframes shakeRight{
+                0%{transform:rotate(50deg);}
+                50%{transform:rotate(30deg);}
+                100%{transform:rotate(50deg);}
+              
+              }
+
+
+              .humannose{
+                position: absolute; 
+                top: 11vmin; 
+                left: 8.5vmin;
+                width: 3vmin; 
+                height: 1.5vmin;
+                border-radius: 50%;
+                background-color:transparent;
+                border-top: .5vmin solid rgb(202, 179, 179);
+              
+              }           
+              
+/*eyes*/
+
+.bigeyeL{
+  position: absolute;
+  width: 4vmin;
+  height: 4vmin;
+  background-color: black;
+  border-radius: 50% ;
+  
+  margin-top: 4vmin;
+  margin-left: 3vmin;
+  box-shadow: -.1vmin -.1vmin 0 .5vmin brown, -.3vmin -.2vmin .1vmin .9vmin white,-.8vmin -.8vmin 1.5vmin 1.1vmin,5.1vmin 23vmin 0vmin -.8vmin brown,13vmin 22vmin 0vmin -.8vmin rgb(236, 212, 212),-3vmin 22vmin 0vmin -.8vmin rgb(236, 212, 212);
+  z-index:1;
+
+}
+
+
+
+
+
+  .bigeyeL::after{
+      content:" "; 
+        position: absolute; 
+        top: 1.6vmin; 
+        right: 3.3vmin; 
+        width: 1vmin; 
+        height: 1vmin;
+        border-radius: 50%;
+        background-color:white;
+  
+  }
+  .bigeyeL::before{
+      content:" "; 
+        position: absolute; 
+        top: 1vmin; 
+        right: 5.4vmin; 
+        width: 1vmin; 
+        color: black;
+        background-color:black;
+        box-shadow: -.1vmin -.1vmin .2vmin .1vmin,-.1vmin -.8vmin .2vmin .1vmin,-.1vmin -1.5vmin .2vmin .1vmin ;
+        transform: rotate(25deg);
+      }
+  
+      
+  .bigeyeR{
+  position: absolute;
+  width: 4vmin;
+  height: 4vmin;
+  background-color: black;
+  border-radius: 50% ;
+  
+  margin-top: 4vmin;
+  margin-left: 13vmin;
+  box-shadow: -.1vmin -.1vmin 0 .5vmin brown, .1vmin -.2vmin .1vmin .9vmin white, .3vmin -.8vmin 1.5vmin 1.1vmin;
+  }
+  .bigeyeR::after{
+      content:" "; 
+        position: absolute; 
+        top: 1.6vmin; 
+        right: 3.3vmin; 
+        width: 1vmin; 
+        height: 1vmin;
+        border-radius: 50%;
+        background-color:white;
+  
+  }
+  .bigeyeR::before{
+      content:" "; 
+        position: absolute; 
+        top: .8vmin; 
+        left: 5.4vmin; 
+        width: 1vmin; 
+        color: black;
+        background-color:black;
+        box-shadow: -.1vmin -.1vmin .2vmin .1vmin,-.1vmin -.8vmin .2vmin .1vmin,-.1vmin -1.5vmin .2vmin .1vmin;
+        transform: rotate(-25deg)
+      }
+
+
+
+ 
+    
+   
+    
+      
+      .smalllArm{
+        position: absolute;
+        top: calc(8.7vmin/2.5);
+        left: calc(2.3vmin/2.5);
+        width: calc(4.5vmin/2.5);
+        height: calc(7.5vmin/2.5);
+        background: burlywood;
+        transform: rotate(30deg);
+        z-index:15;
+
+      }
+
+      .smalllArm::before{
+        content: "";
+        position: absolute;
+        top: -5.5vmin;
+        left: 5.1vmin;
+        width: calc(4.5vmin/2.5);
+        height: calc(8.5vmin/2.5);
+        background: burlywood;
+        transform: rotate(103deg);
+      }
+      
+      
+      .smallrArm{
+        position: absolute;
+        top: calc(8.7vmin/2.5);
+        left: calc(24.2vmin/2.5);
+        width: calc(4.5vmin/2.5);
+        height: calc(7.5vmin/2.5);
+        background: burlywood;
+        transform: rotate(330deg);
+        z-index:11;
+
+      }
+
+      .smallrArm::after{
+        content: "";
+        position: absolute;
+        top: -5.8vmin;
+        left: -5vmin;
+        width: calc(4.6vmin/2.5);
+        height: calc(9.5vmin/2.5);
+        background: burlywood;
+        transform: rotate(77deg);
+
+      }
+            
+      .biglArm{
+        position: absolute;
+        top: 18.2vmin;
+        left: 8.5vmin;
+        width:2.25vmin;
+        height: 5.7vmin;
+        background:white;
+        transform: rotate(30deg);
+      }
+      
+      .biglArm::after{
+        content:"";
+        position: absolute;
+        top: -3vmin;
+        left: .7vmin;
+        width: 2.25vmin;
+        height: 3.7vmin;
+        background:white;
+        transform: rotate(30deg);
+      }
+      .bigfoot {
+        background-color: black;
+        width: 4vmin;
+        height: 3.5vmin;
+        position: absolute;
+        border-radius: 30%;
+        top: 65.5vmin;
+        z-index: 50;
+      }
+      
+      .bigfoot-left {
+        border-top-right-radius: 0; 
+        left: 14vmin;
+      }
+      
+      .bigfoot-right {
+        border-top-left-radius: 0; 
+        right: 5.5vmin;
+      }
+
+      .smallpants-top {
+        background-color: red;
+        height: calc(9vmin/2.5);
+        width: calc(15vmin/2.5);
+        position: absolute;
+        top: calc(48.2vmin/2.5);
+        left: calc(11.9vmin/2.5);
+        border-top: 2vmin solid;
+        border-radius: 20%;
+      }
+      
+      .smallleg {
+        background-color: red;
+        height: calc(14vmin/2.5);
+        width: calc(5vmin/2.5);
+        position: absolute;
+        top: calc(56vmin/2.5);
+      }
+      
+      .smallleg-left {
+        left: calc(21.5vmin/2.5);
+      }
+      
+      .smallleg-right {
+        right: calc(12.6vmin/2.5);
+      }
+      
+      .smallfoot {
+        background-color: black;
+        width: calc(8vmin/2.5);
+        height: calc(7vmin/2.5);
+        position: absolute;
+        border-radius: 30%;
+        top: calc(70vmin/2.5);
+        z-index: 50;
+      }
+      .smalllTrim{
+        position: absolute;
+        left: calc(8.3vmin/2.5);
+        top: calc(17.3vmin/2.5);
+        width: 0; 
+        height: 0;
+        border-left: calc(1.2vmin/2.5) solid transparent;
+        border-bottom: calc(1.2vmin/2.5) solid black;
+        z-index:11;
+
+      }
+      
+    
+     
+ 
+      
+     
+      
+      .smalllaTrim{
+        position: absolute;
+        top: calc(15.3vmin/2.5);
+        left: calc(0.2vmin/2.5);
+        border-top: calc(1.4vmin/2.5) solid red;
+        border-left: calc(1.0vmin/2.5) solid transparent;
+        border-right: 0vmin solid transparent;
+        height: 0;
+        width: calc(4.5vmin/2.5);
+        transform: rotate(30deg);
+        z-index:11;
+      }
+      
+      .smallraTrim{
+        position: absolute;
+        top: calc(15.3vmin/2.5);
+        left: calc(26.4vmin/2.5);
+        border-top: calc(1.4vmin/2.5) solid red;
+        border-left: 0vmin solid transparent;
+        border-right: calc(1.0vmin/2.5) solid transparent;
+        height: 0;
+        width: calc(4.5vmin/2.5);
+        transform: rotate(330deg);
+        z-index:11;
+
+      }
+
+
+      .biglaTrim{
+        position: absolute;
+        top: 23vmin;
+        left: 7.2vmin;
+        border-top: .7vmin solid black;
+        border-left: .5vmin solid transparent;
+        border-right: 0vmin solid transparent;
+        height: 0;
+        width: 2.25vmin;
+        transform: rotate(30deg);
+        z-index:2;
+      }
+      
+      .bigraTrim{
+        position: absolute;
+        top: 23vmin;
+        left: 21.9vmin;
+        border-top: .7vmin solid black;
+        border-left: 0vmin solid transparent;
+        border-right: .5vmin solid transparent;
+        height: 0;
+        width: 2.25vmin;
+        transform: rotate(330deg);
+        z-index:2;
+
+      }
+      
+      .smallfoot-left {
+        left: calc(10vmin/2.5);
+      }
+      
+      .smallfoot-right {
+        right: calc(1vmin/2.5);
+      }
+
+      .bigpants-top {
+        background-color:grey;
+        height: 2vmin;
+        width: 7.6vmin;
+        position: absolute;
+        top: 57vmin;
+        left: 15.5vmin;
+      }
+      
+      .bigleg {
+        background-color:grey;
+        height: 7vmin;
+        width: 2.5vmin;
+        position: absolute;
+        top: 58.5vmin;
+      }
+      
+      .bigleg-left {
+        left: 15.5vmin;
+      }
+      
+      .bigleg-right {
+        right: 6.9vmin;
+      }
+      
+      .bigrArm{
+        position: absolute;
+        top: 18vmin;
+        left: 20.5vmin;
+        width: 2.25vmin;
+        height: 5.7vmin;
+        background: white;
+        transform: rotate(330deg);
+      }
+
+      .bigrArm::after{
+        content:"";
+        position: absolute;
+        top: -2.9vmin;
+        left: -.7vmin;
+        width: 2.2vmin;
+        height: 3.7vmin;
+        background:white;
+        transform: rotate(-30deg);
+      }
+      
+      .riderContainer{
+        position:absolute;
+        left:13.6vmin;
+        top:32.2vmin;
+      }
+      
+      .smallshirt{
+        position: relative;
+        left: calc(3.5vmin/2.5);
+        top: calc(32vmin/2.5);
+        width: calc(30.0vmin/2.5);
+        height: calc(20.0vmin/2.5);
+      }
+      .bigshirt{
+        position: relative;
+        left: 3.5vmin;
+        top: 32vmin;
+        width: 30.0vmin;
+        height: 20.0vmin;
+      }
+
+
+
+
+      .smalleyeL{
+        position: absolute;
+        width: calc(4vmin/2.5);
+        height: calc(4vmin/2.5);
+        background-color: black;
+        border-radius: 50% ;
+        
+        margin-top: calc(4vmin/2.5);
+        margin-left: calc(3vmin/2.5);
+        box-shadow: calc(-.1vmin/2.5) calc(-.1vmin/2.5) 0 calc(.5vmin/2.5) brown, calc(-.3vmin/2.5) calc(-.2vmin/2.5) calc(.1vmin/2.5) calc(.9vmin/2.5) white,calc(-.8vmin/2.5) calc(-.8vmin/2.5) calc(1.5vmin/2.5) calc(1.1vmin/2.5),calc(5.5vmin/2.5) calc(33.8vmin/2.5) 0vmin 0vmin yellow,calc(18.5vmin/2.5) calc(31.8vmin/2.5) 0vmin 0vmin rgb(236, 212, 212),calc(-8.5vmin/2.5) calc(31.8vmin/2.5) 0vmin 0vmin rgb(236, 212, 212);
+        z-index:90;
+      
+      }
+        .smalleyeL::after{
+            content:" "; 
+              position: absolute; 
+              top: calc(1.6vmin/2.5); 
+              right: calc(3.3vmin/2.5); 
+              width: calc(1vmin/2.5); 
+              height: calc(1vmin/2.5);
+              border-radius: 50%;
+              background-color:white;
+        
+        }
+        .smalleyeL::before{
+            content:" "; 
+              position: absolute; 
+              top: calc(1vmin/2.5); 
+              right: calc(5.4vmin/2.5); 
+              width: calc(1vmin/2.5); 
+              color: black;
+              background-color:black;
+              box-shadow: calc(-.1vmin/2.5) calc(-.1vmin/2.5) calc(.2vmin/2.5) calc(.1vmin/2.5),calc(-.1vmin/2.5) calc(-.8vmin/2.5) calc(.2vmin/2.5) calc(.1vmin/2.5),calc(-.1vmin/2.5) calc(-1.5vmin/2.5) calc(.2vmin/2.5) calc(.1vmin/2.5) ;
+              transform: rotate(25deg);
+
+            }
+        
+            
+        .smalleyeR{
+        position: absolute;
+        width: calc(4vmin/2.5);
+        height: calc(4vmin/2.5);
+        background-color: black;
+        border-radius: 50% ;
+        
+        margin-top: calc(4vmin/2.5);
+        margin-left: calc(13vmin/2.5);
+        box-shadow: calc(-.1vmin/2.5) calc(-.1vmin/2.5) 0 calc(.5vmin/2.5) brown, calc(.1vmin/2.5) calc(-.2vmin/2.5) calc(.1vmin/2.5) calc(.9vmin/2.5) white, calc(.3vmin/2.5) calc(-.8vmin/2.5) calc(1.5vmin/2.5) calc(1.1vmin/2.5);
+        z-index:90;
+
+      
+      }
+        .smalleyeR::after{
+            content:" "; 
+              position: absolute; 
+              top: calc(1.6vmin/2.5); 
+              right: calc(3.3vmin/2.5); 
+              width: calc(1vmin/2.5); 
+              height: calc(1vmin/2.5);
+              border-radius: 50%;
+              background-color:white;
+        
+        }
+        .smalleyeR::before{
+            content:" "; 
+              position: absolute; 
+              top: calc(.8vmin/2.5); 
+              left: calc(5.4vmin/2.5); 
+              width: calc(1vmin/2.5); 
+              color: black;
+              background-color:black;
+              box-shadow: calc(-.1vmin/2.5) calc(-.1vmin/2.5) calc(.2vmin/2.5) calc(.1vmin/2.5),calc(-.1vmin/2.5) calc(-.8vmin/2.5) calc(.2vmin/2.5) calc(.1vmin/2.5),calc(-.1vmin/2.5) calc(-1.5vmin/2.5) calc(.2vmin/2.5) calc(.1vmin/2.5);
+              transform: rotate(-25deg)
+            }
+      
+            .smalltorso{
+              position: absolute;
+              top: calc(1.0vmin/2.5);
+              left: calc(8.5vmin/2.5);
+              width: calc(14vmin/2.5);
+              height: calc(16.5vmin/2.5);
+              background: green;
+              border-radius: 50% 50% 0 0;
+              z-index: 20;
+      
+            }            
+.smalltorsoQ{
+  position: absolute;
+  top: calc(1.0vmin/2.5);
+  left: calc(5.5vmin/2.5);
+  border-radius: 50% 50% 0 0;
+  height: 15vmin;
+  width: 8vmin;
+  background-color: tomato;
+  z-index: 20;
+}.bigtorsoW{
+  position: absolute;
+  z-index: 20;
+  top: 15.2vmin;
+  left: 11.7vmin;
+  width: 8vmin;
+  height: 18.3vmin;
+  background: white;
+  border-radius: 40% 40% 0 0;
+
+}
+    
+          
+            .bigtorso{
+              position: absolute;
+              top: 15.2vmin;
+              left: 11.7vmin;
+              width: 8vmin;
+              height: 10vmin;
+              background: white;
+              border-radius:  50% 50% 0 0;
+      
+            }
+            .SWORDpoint {
+              width: 0;
+              height: 0;
+              border-right: calc(6vmin     /2.5)       solid gray;
+              border-top: calc(2vmin     /2.5)       solid transparent;
+              border-bottom: calc(2vmin     /2.5)       solid transparent;
+              position: absolute;
+              top: calc(29.5vmin  /2.5)         ;
+              left: calc(.7vmin    /2.5)       ;
+              transform: rotate(35deg);
+              z-index: 1111;
+            }
+            
+            .SWORDpoint::after {
+              width: 0;
+              height: 0;
+              content: "";
+              border-right: calc(5vmin    /2.5)      solid white;
+              border-top: calc(1.5vmin  /2.5)        solid transparent;
+              border-bottom: calc(1.5vmin  /2.5)        solid transparent;
+              opacity: 0.2;
+              position: absolute;
+              top: calc(-1.5vmin /2.5)        ;
+              left: calc(1.5vmin  /2.5)       ;
+              
+            }
+            
+           
+            
+            .SWORDblade {
+              width: calc(27vmin   /2.5)      ;
+              height: calc(4vmin    /2.5)     ;
+              background-color: gray;
+              position: absolute;
+              top: calc(38.8vmin /2.5)        ;
+              left: calc(3.9vmin  /2.5)       ;
+              transform: rotate(34deg);
+      z-index:1111;
+            }
+            
+            .SWORDblade::after {
+              width: calc(30vmin /2.5)     ;
+              height: calc(.2vmin /2.5)     ;
+              content: "";
+              background-color: white;
+              opacity: 0.3;
+              position: absolute;
+              top: calc(1.8vmin/2.5)      ;
+              left: calc(.5vmin /2.5)     ;
+              z-index: 1111;
+            }
+            
+            .SWORDguard {
+              width: calc(2vmin  /2.5)    ;
+              height: calc(6vmin  /2.5)    ;
+              background-color: black;
+              position: absolute;
+              top: calc(45vmin /2.5)     ;
+              left: calc(27vmin /2.5)     ;
+              transform: rotate(34deg);
+              z-index: 1111;
+            }
+            
+          
+            
+            .SWORDgrip {
+              width: calc(10vmin     /2.5)   ;
+              height: calc(1.5vmin    /2.5)    ;
+              background-color: black;
+              position: absolute;
+              top: calc(50vmin     /2.5)   ;
+              left:calc(27vmin     /2.5)   ;
+              transform: rotate(34deg);
+              z-index:1111;
+
+            }
+            
+          
+            
+            .SWORDpommel {
+              width: calc(4vmin      /2.5)  ;
+              height: calc(4vmin      /2.5)  ;
+              background-color: black;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              position: absolute;
+              top:calc(51.5vmin   /2.5)     ;
+              left: calc(34vmin     /2.5)   ;
+              z-index:1111;
+
+            }
+           
+      
+              .clothesKQ{
+    
+                position: absolute; 
+        
+                top: calc(31.8vmin/2.5); 
+                left: calc(2.5vmin/2.5);
+                width: calc(33vmin/2.5); 
+                height: calc(45vmin/2.5);
+                background-color:purple;
+        
+              border-radius:  50%  50% 0 0;
+              }
+        
+              .clothesKQ::after{
+                content: "";
+                position: absolute;
+                top: calc(-1vmin/2.5);
+                left: calc(13vmin/2.5);
+                width: calc(7vmin/2.5);
+                height: calc(2vmin/2.5);
+                background-color: purple;
+        
+              }
+
+
+              .clothesMAN{
+    
+                position: absolute; 
+        
+                top: 47.5vmin; 
+                left: 11vmin;
+                width: 16vmin; 
+                height: 22vmin;
+        
+              border-radius:  50%  50% 0 0;
+              z-index: 1;
+        
+              }
+        
+              .clothesMAN::after{
+                content:"";
+                position: absolute; 
+        
+               top: -.8vmin; 
+               left: 6.6vmin;
+               width: 3vmin; 
+               height: 1vmin;
+               background-color: rgb(236, 212, 212);
+               box-shadow: 
+                 -2.33vmin 10vmin .1vmin .1vmin,
+                 2.6vmin 10vmin .1vmin .1vmin;
+        
+              }
+
+
+          
+              .smallinside{
+                position: absolute;
+                left: calc(13vmin/2.5);
+                top: calc(1vmin/2.5);
+                width: 0; 
+                height: 0;
+                border-left: calc(2.5vmin/2.5) solid transparent;
+                border-right: calc(2.5vmin/2.5) solid transparent;
+                border-top: calc(5.0vmin/2.5) solid rgb(236, 212, 212);
+                z-index:111;
+
+              }
+              
+              .smalllCollar{
+                position: absolute;
+                top: calc(.9vmin/2.5);
+                left: calc(10.6vmin/2.5);
+                border-top: calc(2.0vmin/2.5) solid red;
+                border-left: calc(.5vmin/2.5) solid transparent;
+                border-right: calc(.5vmin/2.5) solid transparent;
+                height: 0;
+                width: calc(2.5vmin/2.5); 
+                transform: rotate(63deg);
+                z-index:111;
+
+              }
+              
+              .smallrCollar{
+                position: absolute;
+                top: calc(.9vmin/2.5);
+                left: calc(16.9vmin/2.5);
+                border-top: calc(2.0vmin/2.5) solid red;
+                border-left: calc(.5vmin/2.5) solid transparent;
+                border-right: calc(.5vmin/2.5) solid transparent;
+                height: 0;
+                width: calc(2.5vmin/2.5); 
+                transform: rotate(297deg);
+                z-index:111;
+
+              }
+              
+              .smallblCollar{
+                position: absolute;
+                top: calc(4vmin/2.5);
+                left: calc(12.3vmin/2.5);
+                border-top: calc(.6vmin/2.5) solid red;
+                border-left: calc(.3vmin/2.5) solid transparent;
+                border-right: calc(.3vmin/2.5) solid transparent;
+                height: 0;
+                width: calc(3.5vmin/2.5); 
+                transform: rotate(63deg);
+                z-index:111;
+
+              }
+              
+              .smallbrCollar{
+                position: absolute;
+                top: calc(4.0vmin/2.5);
+                left: calc(14.6vmin/2.5);
+                border-top: calc(.6vmin/2.5) solid red;
+                border-left: calc(.3vmin/2.5) solid transparent;
+                border-right: calc(.3vmin/2.5) solid transparent;
+                height: 0;
+                width: calc(3.5vmin/2.5); 
+                transform: rotate(296deg);
+                z-index:111;
+
+              }
+              
+              .smallbtCollar{
+                position: absolute;
+                left: calc(14.8vmin/2.5);
+                top: calc(5.9vmin/2.5);
+                width: 0; 
+                height: 0;
+                border-left: calc(.7vmin/2.5) solid transparent;
+                border-right: calc(.7vmin/2.5) solid transparent;
+                border-top: calc(1.5vmin/2.5) solid red;
+                z-index:111;
+
+              }
+              
+            
+            
+             
+         
+           
+              
+              .smalllShadow{
+                position: relative;
+                left: calc(5.8vmin/2.5);
+                top: calc(6.5vmin/2.5);
+                width: 0;
+                height: 0;
+                border-bottom: calc(2.0vmin/2.5) solid #C1C1B3;
+                border-left: calc(6vmin/2.5) solid transparent;
+                transform: rotate(300deg);
+                z-index:111;
+
+              }
+              
+              .smalllShadow:after{
+                width: 0;
+                height: 0;
+                position: absolute;
+                right: 0;
+                content: "";
+                border-bottom: calc(2.0vmin/2.5) solid #E0E0D0;
+                border-left: calc(3.5vmin/2.5) solid transparent;
+              }
+              
+              .smallrShadow{
+                position: absolute;
+                left: calc(20.0vmin/2.5);
+                top: calc(7.4vmin/2.5);
+                width: 0; 
+                height: 0;
+                border-left: calc(2.5vmin/2.5) solid transparent;
+                border-right: calc(1.6vmin/2.5) solid transparent;
+                border-top: calc(1.0vmin/2.5) solid #C1C1B3;
+                transform: rotate(91deg);
+                z-index:111;
+
+              }
+              
+              .smallcShadow{
+                position: absolute;
+                top: calc(1.7vmin/2.5);
+                left: calc(16.8vmin/2.5);
+                border-top: calc(2.5vmin/2.5) solid #C1C1B3;
+                border-left: calc(.5vmin/2.5) solid transparent;
+                border-right: calc(.5vmin/2.5) solid transparent;
+                height: 0;
+                width: calc(3.0vmin/2.5); 
+                transform: rotate(297deg);
+                z-index:111;
+
+              }
+              
+              .smallcbShadow{
+                position: absolute;
+                top: calc(4.0vmin/2.5);
+                left: calc(16.0vmin/2.5);
+                width: 0; 
+                height: 0;
+                border-right: calc(1.5vmin/2.5) solid transparent;
+                border-top: calc(4.0vmin/2.5) solid #C1C1B3;
+                transform: rotate(20deg);
+                z-index:111;
+
+              }
+        
+
+
+
+
+/*1 HORSE*/
+    
+    .horse1 {
+      position: absolute;
+      top: 42vmin;
+      right: 7vmin;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    
+    .horse1 .horse1ear {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      top: calc(-58vmin/1.3)   ;
+      left: calc(-22vmin/1.3)   ;
+      background: black;
+      width: calc(2vmin  /1.3) ;
+      height: calc(4vmin  /1.3) ;
+      border-radius: 90% 0;
+      transform: rotate(-60deg);
+    }
+    .horse1 .horse1ear:before {
+      content: "";
+      position: absolute;
+      top: calc(3.8vmin/1.3)   ;
+      left: calc(2vmin  /1.3) ;
+      background: black;
+      width: calc(2vmin  /1.3) ;
+      height: calc(4vmin  /1.3) ;
+      border-radius: 90% 0;
+      transform: rotate(60deg);
+    }
+    .horse1 .horse1head {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      top: calc(-44.3vmin /1.3)   ;
+      left: calc(-23.8vmin /1.3)   ;
+      width: calc(11.6vmin  /1.3)  ;
+      height: calc(4.3vmin   /1.3) ;
+      background: black;
+      transform: rotate(-45deg);
+    }
+    .horse1 .horse1head:before {
+      content: "";
+      position: absolute;
+      top: calc(2.7vmin /1.3)    ;
+      width: calc(12vmin  /1.3)   ;
+      height: calc(3.5vmin /1.3)    ;
+      background: black;
+      transform: rotate(25deg);
+    }
+    .horse1 .horse1head:after {
+      content: "";
+      position: absolute;
+      top: calc(-0.2vmin /1.3)          ;
+      left: calc(7.5vmin  /1.3)         ;
+      width: calc(6vmin    /1.3)       ;
+      height: calc(10vmin   /1.3)        ;
+      background: black;
+      border-top-right-radius: calc(4.2vmin  /1.3)         ;
+      border-top-left-radius: calc(0.4vmin  /1.3)         ;
+      border-bottom-right-radius: calc(3vmin    /1.3)       ;
+      border-bottom-left-radius: calc(1vmin    /1.3)       ;
+    }
+    .horse1 .horse1head .horse1eye {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      z-index: 2;
+      top: calc(1.9vmin /1.3)    ;
+      left: calc(5.2vmin /1.3)    ;
+      width: calc(2.3vmin /1.3)    ;
+      height: calc(1.2vmin /1.3)    ;
+      border-top-right-radius: calc(10vmin  /1.3)   ;
+      border-top-left-radius: calc(10vmin  /1.3)   ;
+      border: calc(0.4vmin/1.3) solid red;
+      border-bottom: none;
+      background: transparent;
+      transform: rotate(-135deg);
+    }
+    .horse1 .horse1head .horse1eye:before {
+      content: "";
+      position: absolute;
+      top: calc(0.9vmin /1.3)       ;
+      left: calc(2.2vmin /1.3)       ;
+      width: calc(0.4vmin /1.3)       ;
+      height: calc(0.5vmin /1.3)       ;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      background: #010101;
+    }
+    .horse1 .horse1head .horse1eye:after {
+      content: "";
+      position: absolute;
+      top: calc(0.9vmin /1.3)      ;
+      left: calc(-0.4vmin/1.3)       ;
+      width: calc(0.4vmin /1.3)      ;
+      height: calc(0.5vmin /1.3)      ;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      background: #010101;
+    }
+    .horse1 .horse1head .horse1eye-2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      z-index: 2;
+      top: calc(1vmin   /1.3)   ;
+      left: calc(6.45vmin/1.3)      ;
+      width: calc(2.1vmin /1.3)     ;
+      height: calc(0.5vmin /1.3)     ;
+      background: black;
+      transform: rotate(-135deg);
+    }
+    .horse1 .horse1mouth {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      top: calc(-37.8vmin /1.3)     ;
+      left: calc(-31vmin   /1.3)   ;
+      width: calc(4vmin     /1.3) ;
+      height: calc(4.35vmin  /1.3)    ;
+      border-radius: 50%  0 30%   30%;
+      background: black;
+    }
+    
+    
+    .horse1 .horse1body {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      top: calc(-10.8vmin /1.3)      ;
+      left: calc(-1.9vmin  /1.3)     ;
+      width: calc(24vmin    /1.3)   ;
+      height: calc(26vmin    /1.3)   ;
+      border-bottom-left-radius: calc(10vmin    /1.3)   ;
+      border-bottom-right-radius: calc(10vmin    /1.3)   ;
+      background: black;
+      transform: rotate(15deg);
+      
+    }
+    .horse1 .horse1body:before {
+      content: "";
+      position: absolute;
+      top: calc(-5vmin     /1.3)          ;
+      left: calc(2.7vmin    /1.3)           ;
+      width: calc(6vmin      /1.3)         ;
+      height: calc(12vmin     /1.3)          ;
+      background: black;
+      border-radius: 50%;
+      transform: rotate(-24deg);
+    }
+    .horse1 .horse1body:after {
+      content: "";
+      position: absolute;
+      top: calc(5vmin      /1.3)         ;
+      left: calc(10.6vmin   /1.3)            ;
+      width: calc(15vmin     /1.3)          ;
+      height: calc(4vmin      /1.3)         ;
+      background: var(--bg-color);
+      border-top-left-radius: calc(1vmin      /1.3)         ;
+      border-bottom-left-radius: calc(4vmin      /1.3)         ;
+      transform: rotate(-25deg);
+    }
+    .horse1 .horse1body-2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      top: calc(-29vmin   /1.3)        ;
+      left: calc(12vmin    /1.3)       ;
+      width: calc(16vmin    /1.3)       ;
+      height: calc(9vmin     /1.3)      ;
+      background:var(--bg-color);
+    }
+    .horse1 .horse1body-2:before {
+      content: "";
+      position: absolute;
+      top: calc(-4.5vmin  /1.3)         ;
+      left: calc(-4.7vmin  /1.3)         ;
+      width: calc(6vmin     /1.3)      ;
+      height: calc(15vmin    /1.3)       ;
+      background: black;
+      border-top-right-radius: calc(10vmin    /1.3)       ;
+      transform: rotate(4deg);
+    }
+    .horse1 .horse1body-2:after {
+      content: "";
+      position: absolute;
+      top: calc(11.7vmin  /1.3)         ;
+      left: calc(9.6vmin   /1.3)        ;
+      width: calc(8.1vmin   /1.3)        ;
+      height: calc(10vmin    /1.3)       ;
+      background: black;
+      transform: rotate(46deg);
+    }
+    .horse1 .horse1body-3 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      top: calc(-0.8vmin  /1.3)              ;
+      left: calc(25.79vmin /1.3)               ;
+      width: calc(8vmin     /1.3)           ;
+      height: calc(8vmin     /1.3)           ;
+      background: black;
+      transform: rotate(20deg);
+    }
+    .horse1 .horse1body-3:before {
+      content: "";
+      position: absolute;
+      left: calc(-14vmin   /1.3)             ;
+      top: calc(9.5vmin   /1.3)             ;
+      width: calc(7vmin     /1.3)           ;
+      height: calc(10vmin    /1.3)            ;
+      background: black;
+      border-bottom-right-radius: calc(10vmin    /1.3)            ;
+      transform: rotate(70deg);
+    }
+    .horse1 .horse1body-3:after {
+      content: "";
+      position: absolute;
+      top: calc(5.5vmin   /1.3)             ;
+      left: calc(0.3vmin   /1.3)             ;
+      width: calc(8.1vmin   /1.3)             ;
+      height: calc(8vmin     /1.3)           ;
+      background: black;
+      border-bottom-left-radius: calc(4vmin     /1.3)           ;
+      transform: rotate(-53deg);
+    }
+    .horse1 .horse1tail {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      z-index: 100;
+      top: calc(-9vmin     /1.3)     ;
+      left: 27vmin;
+      width: calc(12vmin      /1.3)    ;
+      height: calc(7vmin      /1.3)    ;
+      background: black;
+      border-top-right-radius: calc(6.4vmin    /1.3)      ;
+      border-top-left-radius: calc(4.4vmin    /1.3)      ;
+    }
+    .horse1 .horse1tail:before {
+      content: "";
+      position: absolute;
+      top: calc(1.44vmin   /1.3)       ;
+      left: calc(0.6vmin    /1.3)      ;
+      width: calc(6.3vmin    /1.3)      ;
+      height: calc(5vmin      /1.3)    ;
+      background: var(--bg-color);
+      border-top-right-radius: calc(10vmin     /1.3)     ;
+      border-top-left-radius: calc(3.6vmin    /1.3)      ;
+      border-bottom-right-radius: calc(1.6vmin    /1.3)      ;
+      transform: rotate(-10deg);
+    }
+    .horse1 .horse1tail:after {
+      content: "";
+      position: absolute;
+      top: calc(5.6vmin    /1.3)        ;
+      left: calc(2.5vmin    /1.3)        ;
+      width: calc(10vmin     /1.3)       ;
+      height: calc(5vmin      /1.3)      ;
+      background: var(--bg-color);
+      transform: rotate(-8deg);
+    }
+    .horse1 .leg, .horse1 .horse1leg-right, .horse1 .horse1leg-left {
+      width: 0;
+      height: 0;
+        border-bottom: 0vmin solid black;
+    
+      border-top: calc(16.5vmin   /1.3)          solid black;
+      border-left: calc(3vmin      /1.3)       solid transparent;
+      border-right: calc(3vmin      /1.3)       solid transparent;
+    }
+    .horse1 .horse1leg:after, .horse1 .horse1leg-right:after, .horse1 .horse1leg-left:after {
+      content: "";
+      position: absolute;
+      left: calc(-3.5vmin   /1.3)         ;
+      top: calc(-6.15vmin  /1.3)          ;
+      width: 0;
+      height: 0;
+      border-bottom: calc(10.35vmin  /1.3)           solid black;
+      border-left: calc(3.65vmin   /1.3)          solid transparent;
+      border-right: calc(3.65vmin   /1.3)          solid transparent;
+      
+     
+    }
+    
+    
+    .horse1 .horse1leg-left {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      top: calc(26.5vmin  /1.3)    ;
+      left: calc(-12.9vmin /1.3)     ;
+    }
+    .horse1 .horse1leg-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      top: calc(27.5vmin  /1.3)    ;
+      left: calc(27.8vmin  /1.3)    ;
+      border-top: calc(15.5vmin  /1.3)     solid black;
+    }
+    
+    .horse1butt {
+      position: absolute;
+      width:8vmin;
+      height:10vmin;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      border-radius:50%;
+      top: -3vmin;
+      left: 19vmin ;
+      border-right: 4vmin    solid black;
+      z-index:100;
+    }
+/*3 BOAT*/
+
+   .boat3 {
+    height: 16vmin;
+    width: 30vmin;
+    background-color: #984904;
+    /* clip-path: polygon(0% 0%, 100% 0%, 90% 70%, 80% 100%, 20% 70%, 10% 10%); */
+    border-radius: 0 0 100% 100%;
+    position: relative;
+    bottom: -48vmin;
+    left: 4vmin;
+    }
+    
+    .boat3::before {
+      content: "";
+      height: 1.5vmin;
+      width: 13vmin;
+      background-color: red;
+      position: absolute;
+      top: -1.5vmin;
+      left: 50%;
+      transform: translate(-50%);
+
+      z-index:10;
+
+    }
+    
+    .boat3::after {
+      content: "";
+      height: 1.5vmin;
+      width: 100%;
+      border: .3vmin solid;
+      border-color: black transparent black transparent;
+      position: absolute;
+      top: 1.3vmin;
+      /* left: 50%;
+                transform: translate(-50%); */
+    }
+    
+    .boat3wing-1 {
+      height: 21vmin;
+      width: 10vmin;
+      background-color: #fff;
+      position: absolute;
+      top: -22vmin;
+      left: 3vmin;
+      clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+      z-index: 10;
+    }
+    
+    .boat3wing-2 {
+      height: 18.7vmin;
+      width: 13vmin;
+      background-color: #fff;
+      position: absolute;
+      top: -19.5vmin;
+      right: 2.5vmin;
+      clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+
+    }
+   
+    
+    
+
+
+
+
+
+
+/*2 CLOVER*/
+ .clover2{
+     position: relative;
+      width: 50vmin;
+      height: 50vmin;
+      top: 25vmin;
+      left: -5vmin;
+      z-index: 1;
+    }
+     
+    .clover2green{
+      position: absolute;
+      background-color:green ;
+      width:25%;
+      height: 25%;
+      left:20%;
+      border-radius: 20% 60%;
+    }
+    
+    .clover2green1{
+      position:absolute;
+      background-color:green ;
+      width:25%;
+      height:25%;
+      left:45.3%;
+      border-radius: 60% 20%;
+    }
+    
+    .clover2green2{
+      position:absolute;
+      width:25%;
+      height:25%;
+      top:25.3%;
+      left:45.3%;
+      border-radius: 20% 60%;
+    }
+    
+    .clover2green3{
+      position:absolute;
+      background-color:green;
+      width:25%;
+      height:25%;
+      top:25.3%;
+      left:20%;
+      border-radius: 60% 20%;
+    }
+    .clover2circle{
+      position: absolute;
+      background-color:#FCFE31;
+      width:7%;
+      height:7%;
+      border-radius: 50%;
+      left:42%;
+      top:22%;
+    }
+    
+    .clover2stick{
+      position:absolute;
+      background-color:#029734;
+      width:5%;
+      z-index: -3;
+      height:55vmin;
+      top:15vmin;
+      left:21vmin;
+    }
+    .clover2leaf
+    {
+    
+      position:absolute;
+      background-color:#029734;
+      width:10%;
+      height:8%;
+      top:71%;
+      left:24vmin;
+      border-radius: 60% 0;
+      transform: rotate(10deg);
+      box-shadow: 0 0 3em 5.2em #029734 inset; 
+    }
+    .clover2leaf.clover2left{
+      left:15.2vmin;
+      transform: rotate(-130deg);
+    
+    }
+    .clover2:hover {
+        animation: bubbly 1s ease-in;
+    }
+    
+    @keyframes bubbly {
+     0% {
+           transform: scale(1,1) rotate(0deg);
+     }
+     10% {
+           transform: rotate(5deg);
+     }
+     20% {
+           transform: rotate(-5deg);
+     }
+     30% {
+           transform: rotate(5deg);
+     }
+     40% {
+           transform: scale(.7,.7) rotate(-5deg);
+     }
+     50% {
+           transform: scale(1.2,1.2) rotate(5deg);
+     }
+     60% { 
+           transform: scale(.8,.8) rotate(-5deg);
+     }
+     70% {
+               transform: scale(1.1,1.1) rotate(5deg);
+     }
+     80% {
+           transform: scale(.9,.9) rotate(-5deg);
+     }
+     90% {
+           transform: scale(1,1) rotate(5deg);
+     }
+     100% {
+           transform: rotate(0deg);
+     }
+    
+    }
+
+/*4 HOUSE*/
+
+.house4roof {
+  width:20vmin;
+  height:0vmin;
+  border-top: 30vmin solid transparent;
+  border-bottom: 15vmin solid darkred;
+  border-left: 18vmin solid transparent;
+  border-right: 20vmin solid transparent;
+}
+
+.house4chimney {
+  width: 5vmin;
+  height:17vmin;
+  background-color:darkred;
+  position:relative;
+  right:-12vmin;
+  top:-3.5vmin;
+}
+  
+.house4wall { 
+  width: 50vmin;
+  height: 20vmin;
+  background-color: #9b4c32;
+  display:flex;
+}
+
+.house4door {
+  margin-left:30%;
+  margin-right:10%;
+  margin-top:10%;
+  width:0vmin;
+  height:0vmin;
+  border-top: 6vmin solid brown;
+  border-bottom: 6vmin solid brown;
+  border-left: 4vmin solid darkred;
+  border-right: 4vmin solid darkred;
+}
+
+.house4windowBorder {
+  display:flex;
+  position:relative;
+  top:30%;
+  right:-10%;
+  width: 0vmin;
+  height:0vmin;
+  background-color: darkred;
+  border-top: 3.5vmin solid brown;
+  border-bottom: 3.5vmin solid brown;
+  border-left: 3.5vmin solid darkred;
+  border-right: 3.5vmin solid darkred;
+}
+
+.house4window { 
+  top:-2.5vmin;
+  left:-2.5vmin;
+  position:relative;
+  width:0vmin;
+  height:0vmin;
+  background-color:lightblue;
+  border-top:2.5vmin solid lightskyblue;
+  border-bottom:2.5vmin solid lightskyblue;
+  border-left:2.5vmin solid lightblue;
+  border-right:2.5vmin solid lightblue;
+}
+
+
+.house4windowDoor { 
+  top:-5vmin;
+  left:-3vmin;
+  position:relative;
+  width:0vmin;
+  height:0vmin;
+  background-color:lightblue;
+  border-top:2.5vmin solid #804000;
+  border-bottom:2.5vmin solid #804000;
+  border-left:3vmin solid #A18262;
+  border-right:3vmin solid #A18262;
+}
+
+.house4nock {
+  width:1vmin;
+  height:1vmin;
+  border-radius:50%;
+  background-color:black;
+  top:-10.5vmin;
+  right:-2vmin;
+  position:relative;
+  display:flex;
+}
+
+.house4ladder {
+  width:10vmin;
+  height:1.5vmin;
+  background-color:#9c9c9c;
+  position:relative;
+  top:-5vmin;
+  left:-5vmin;
+}
+
+
+.house4ladder2 {
+  width:15vmin;
+  height:1.5vmin;
+  background-color:#828282;
+  position:relative;
+  top:-5vmin;
+  left:-7.5vmin;
+} 
+ /*8 COFFING*/             
+ 
+ .coffing8{
+  width:20vmin;
+  height:45vmin;
+  left:9vmin;
+  background-color:brown;
+  position:absolute;
+  bottom:1vmin;
+  
+ -webkit-clip-path: polygon(30% 100%, 0% 30%, 0% 10%, 20% 0%, 80% 0%, 100% 10%, 100% 30%, 70% 100%);
+clip-path: polygon(30% 100%, 0% 30%, 0% 10%, 20% 0%, 80% 0%, 100% 10%, 100% 30%, 70% 100%);
+
+box-shadow: inset 1vmin 1vmin 10vmin,
+inset -1vmin -1vmin 10vmin,
+inset 1vmin -1vmin 40vmin brown
+
+;
+
+}
+
+
+.coffing8cross{
+
+  width:4vmin;
+  height:8vmin;
+  left:8vmin;
+  background-color:yellow;
+  position:absolute;
+  top:4vmin;
+  -webkit-clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+
+}
+
+/*12 BIRDS*/
+
+
+
+
+.twitter {
+  height: 15vmin;
+  width: 16vmin;
+  border: none;
+  border-radius: 15%;
+  font-size: 1vmin;
+  overflow: hidden;
+}
+.twitter::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  height: 5.125vmin;
+  width: 5.125vmin;
+  margin-top:5.125vmin;
+  border-radius: 100%;
+  background-color: #39dbff;
+  box-shadow: 1.1vmin -6.05vmin 0 1.85vmin var(--bg-color), 1.2vmin -3.12vmin 0 -0.15vmin #39dbff, 1.975vmin -5.35vmin 0 1.84vmin var(--bg-color), 1.5vmin -2.2vmin 0 -0.125vmin #39dbff, -2.1vmin -6.7vmin 0 4.75vmin var(--bg-color), -5.5vmin -0.8vmin 0 0.07vmin #39dbff, -7.2vmin -1.35vmin 0 0.07vmin var(--bg-color), -5.5vmin 1vmin 0 0.07vmin #39dbff, -6.8vmin 1.1vmin 0 0.07vmin var(--bg-color), -4.7vmin 2.8vmin 0 0.07vmin #39dbff, -8.3vmin 1.175vmin 0 2.775vmin var(--bg-color), -8.275vmin -6.575vmin 0 2.775vmin var(--bg-color), -4.75vmin 0.35vmin 0 4.75vmin #39dbff;
+
+  
+}
+
+.twitter::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  height: 5.125vmin;
+  width: 5.125vmin;
+  margin-top:5.125vmin;
+  border-radius: 100%;
+  background-color: #39dbff;
+  box-shadow: 1.1vmin -6.05vmin 0 1.85vmin var(--bg-color), 1.2vmin -3.12vmin 0 -0.15vmin #39dbff, 1.975vmin -5.35vmin 0 1.84vmin var(--bg-color), 1.5vmin -2.2vmin 0 -0.125vmin #39dbff, -2.1vmin -6.7vmin 0 4.75vmin var(--bg-color), -5.5vmin -0.8vmin 0 0.07vmin #39dbff, -7.2vmin -1.35vmin 0 0.07vmin var(--bg-color), -5.5vmin 1vmin 0 0.07vmin #39dbff, -6.8vmin 1.1vmin 0 0.07vmin var(--bg-color), -4.7vmin 2.8vmin 0 0.07vmin #39dbff, -8.3vmin 1.175vmin 0 2.775vmin var(--bg-color), -8.275vmin -6.575vmin 0 2.775vmin var(--bg-color), -4.75vmin 0.35vmin 0 4.75vmin #39dbff;
+
+  
+}
+
+/*9 RAMO*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+.flowers9ramo{
+  width: 30vmin;
+  height: 40vmin;
+  margin-left: -8vmin;
+  margin-top: 37vmin;
+  background: repeating-linear-gradient(to bottom,rgb(154, 67, 67),#d2691e 20%) 48.5% 75%/4vmin 2vmin,
+
+
+linear-gradient(120deg,rgba(205,133,63,0) 10%,#2d8b08 11%,#cd853f 89%,rgba(205,133,63,0) 90%) 50% 100%/1vmin 100%,
+
+linear-gradient( 70deg,rgba(210,105,30,0) 10%,#d2691e 11%,#d2691e 89%,rgba(210,105,30,0) 90%) 48% 110%/1vmin 86%,
+
+  linear-gradient(60deg,rgba(255,255,255,0) 55%,green 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 20% 80%/16vmin 60%,
+
+linear-gradient(-71deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 80% 70%/15vmin 90%,
+linear-gradient(101deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 60% 10%/15vmin 90%,
+ linear-gradient(71deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 20% 70%/15vmin 90%,
+
+  linear-gradient(77deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 30% 70%/12vmin 90%,
+
+ linear-gradient(-61deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 90% 200%/20vmin 90%;
+  background-repeat: no-repeat;
+}
+
+.flowers9ramo::before{
+  content:"";
+  width: 5vmin;
+  height: 6vmin;
+  left: 10vmin;
+  top: 40vmin;
+  box-shadow: 5.4vmin 13vmin 1vmin 1vmin yellow,
+  8.4vmin 3vmin 1vmin 1vmin yellow,
+  15.4vmin 3vmin 1vmin 1vmin white,
+  14vmin 8vmin 1vmin 1vmin white,
+  8.4vmin 3vmin 1vmin 1vmin yellow,
+  27vmin 8vmin 1vmin 1vmin yellow,
+  21.3vmin 0vmin 1vmin 1vmin yellow,
+  5.3vmin 3vmin 1vmin 1vmin white,
+
+  24vmin 3vmin 1vmin 1vmin white;
+
+
+
+
+
+  
+
+}
+.flowers9ramo::after{
+  content:"";
+  
+  width: 5vmin;
+  height: 6vmin;
+  left: -4vmin;
+  top: -8vmin;
+  
+}
+
+
+@keyframes flowers9ramopetals {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes wind1 {
+	0% {
+		transform: scale(0.38) rotate(-65deg);
+	}
+	50% {
+		transform: scale(0.38) rotate(-70deg);
+	}
+	100% {
+		transform: scale(0.38) rotate(-65deg);
+	}
+}
+@keyframes wind2 {
+	0% {
+		transform: scale(0.30) rotate(15deg);
+	}
+	45% {
+		transform: scale(0.30) rotate(20deg);
+	}
+	100% {
+		transform: scale(0.30) rotate(15deg);
+	}
+}
+
+.ramo {
+  position:absolute;
+	top: 48.4vmin;
+left: 4%;
+transform: rotate(-20deg);
+z-index:-1;
+
+}
+
+.flowers9ramopetals {
+	border-radius: 100%;
+	display: inline-block;
+	background-color: #faaa18;
+	height: 5vmin;
+	width: 5vmin;
+	box-shadow: 1.5vmin 1.7vmin #ffe000,
+				      -1.5vmin 1.7vmin #ffe000,
+				      -2.2vmin -.7vmin #ffe000,
+              0vmin -2.2vmin #ffe000,
+              2.2vmin -.7vmin #ffe000;
+	margin-bottom: -1.6vmin;
+	margin-left: 4vmin;
+	animation: flowers9ramopetals 60s linear infinite;
+}
+.flowers9ramoleaf1 {
+	width: 8vmin;
+	height: 14vmin;
+	background-image: linear-gradient(to top left, #9ACC39 50%,           transparent 50%, transparent 50%, #AFB635 50%);
+	-moz-border-radius: 100% / 10vmin 0vmin;
+	-webkit-border-radius: 100% / 10vmin 0vmin;
+	border-radius: 100% 0 / 10vmin 0vmin;
+	transform: scale(0.38) rotate(-65deg);
+	margin-top: -15.1vmin;
+	margin-bottom: 0vmin;
+	margin-left: 6.3vmin;
+	transform-origin: 0 14vmin;
+	animation: wind1 5.8s ease-in-out infinite;
+}
+.flowers9ramoleaf2 {
+	width: 8vmin;
+	height: 14vmin;
+	background-image: linear-gradient(to top left, #9ACC39 50%, transparent 50%, transparent 50%, #AFB635 50%);
+	-moz-border-radius: 100% / 10vmin 0vmin;
+	-webkit-border-radius: 100% / 10vmin 0vmin;
+	border-radius: 100% 0 / 10vmin 0vmin;
+	transform: scale(0.30) rotate(15deg);
+	margin-top: -16.5vmin;
+	margin-bottom: 3.4vmin;
+	margin-left: 6.3vmin;
+	animation: wind2 4s ease-in-out infinite;
+	transform-origin: 0 14vmin;
+}
+.flowers9ramostick {
+	border-left: .6vmin solid #9ACC39;
+	height: 11vmin;
+	margin-left: 6.2vmin;
+}
+.flowers9ramocontainer-flower {
+  position: absolute;
+  margin: 20vmin;
+  top: 12vmin;
+  transform: rotate(11deg);
+  z-index: 10;
+}
+ 
+.flowers9ramoround {
+ background-color:orange;
+  border-radius: 50%;
+  width: 6.5vmin;
+  height:6.5vmin;
+  position:absolute;
+  margin-top:4.2vmin;
+  transform:rotate(-10deg)
+}
+.flowers9ramosmall-round{
+   background-color:#9C92A3;
+  border-radius: 50%;
+  position:absolute;
+}
+.flowers9ramosmall-round.flowers9ramoone{
+  width: 1.2vmin;
+  height:1.2vmin;
+  margin-top:2.2vmin;
+  margin-left:1.0vmin
+}
+.flowers9ramosmall-round.flowers9ramotwo{
+  width: 1.6vmin;
+  height:1.6vmin;
+  margin-top:4.2vmin;
+  margin-left:2.2vmin
+}
+
+.flowers9ramosmall-round.flowers9ramothree{
+  width: 1.4vmin;
+  height:1.4vmin;
+  margin-top:.8vmin;
+  margin-left:2.4vmin
+}
+.flowers9ramosmall-round.flowers9ramofour{
+  width: 1.4vmin;
+  height:1.4vmin;
+  margin-top:2.1vmin;
+  margin-left:4.5vmin  
+}
+.flowers9ramosmall-round.flowers9ramofive{
+  width: 1vmin;
+  height:1vmin;
+  margin-top:4.2vmin;
+  margin-left:4.5vmin
+}
+.flowers9ramopetal-wrapper.flowers9ramofirst, .flowers9ramosecond, .flowers9ramothird{
+  width:6vmin;
+  height:8vmin;
+  margin-top:-1.5vmin;
+  margin-left:.8vmin;
+  position:absolute;
+  z-index:0;
+  }
+.flowers9ramopetal-wrapper.flowers9ramosecond{
+  margin-top:.7vmin;
+  margin-left:5vmin;
+  transform:rotate(43deg)
+}
+.flowers9ramopetal-wrapper.flowers9ramothird{
+  margin-top:-.2vmin;
+  margin-left:-4vmin;
+  transform:rotate(-49deg)
+}
+.flowers9ramopetal-wrapper.fourth, .flowers9ramofifth, .flowers9ramosixth{
+  width:6vmin;
+  height:8vmin;
+  margin-top:8.5vmin;
+  margin-left:.8vmin;
+  position:absolute;
+  z-index:0;
+  transform:rotate(0deg);
+}
+.flowers9ramopetal-wrapper.flowers9ramofifth{
+  margin-top:6.9vmin;
+  margin-left:-4vmin;
+  transform:rotate(60deg);
+  
+} 
+.flowers9ramopetal-wrapper.flowers9ramosixth{
+  margin-top:5vmin;
+  margin-left:5.3vmin;
+  transform:rotate(-67deg);
+}
+
+.flowers9ramopetal {
+  position:absolute;
+  z-index:-1;
+ 	background-color: tomato;
+	width:2.3vmin;
+  height:8vmin;
+  border-radius:55% 45% 100% 0% / 0% 23% 77% 100%;margin-top:-1vmin;
+}
+.flowers9ramopetalone{ 
+  margin-left:2.2vmin;
+  
+}
+.flowers9ramopetaltwo{
+  transform:scaleX(-1);
+}
+.flowers9ramopetaly {
+  position:absolute;
+ 	background-color: tomato;
+	width:2.3vmin;
+  height:8vmin;
+  border-radius:55% 45% 100% 0% / 0% 23% 77% 100%;
+  margin-top:2vmin;
+  
+}
+.flowers9ramopetalyone{ 
+  margin-left:2.2vmin;
+  transform:scaleY(-1);}
+.flowers9ramopetalytwo{
+ transform:scaleX(-1) scaleY(-1);
+ 
+}
+
+.flowers9ramostem, .flowers9ramostem3, .flowers9ramostem4 {
+  width: .5vmin;
+  height: 25vmin;
+  background-color: #9C92A3;
+  margin-left: 3vmin;
+  margin-top: 16.5vmin;
+  z-index:-1;
+}
+
+.flowers9ramoleaf {
+  border-radius:4% 96% 0% 100% / 0% 100% 0% 100%;
+
+  width: 2.9vmin;
+  height:9vmin;
+}
+.flowers9ramoleafone{
+   margin-left: -1vmin;
+  margin-top: -18vmin;
+  transform:rotate(-20deg);
+  position:absolute;
+}
+.flowers9ramoleaftwo{
+    margin-left:4.4vmin;
+  margin-top: -20vmin;
+  transform:rotate(53deg);
+  position:absolute;
+}
+
+.flowers9ramocontainer-flower3{
+  position: absolute;
+  margin: 19.3vmin;
+  top: 35.4vmin;
+  transform: rotate(6deg);
+  z-index: 100;
+}
+.flowers9ramostem3{
+   margin-left: 3vmin;
+  margin-top:-5vmin;
+  
+}
+.flowers9ramoleafo{
+  width: 2.5vmin;
+  height:7vmin;
+  border-radius:4% 96% 0% 100% / 0% 100% 0% 100%;
+  background-color: #074921;
+}
+
+.flowers9ramoleafthree{
+  width: 2.5vmin;
+  height:7vmin;
+  margin-left: 0vmin;
+  margin-top:-22vmin;
+  transform:rotate(-11deg);
+}
+.flowers9ramoleaffour{
+  width: 2.5vmin;
+  height:7vmin;
+  margin-left: 4vmin;
+  margin-top:-7.1vmin;
+  transform:scaleX(-1) rotate(-11deg);
+}
+.flowers9ramoleaffive{
+  margin-left: 2.1vmin;
+  margin-top:-15vmin;
+ transform: rotate(19deg);
+   width: 2.5vmin;
+  height:7vmin;
+}
+
+/*16 STARS*/
+
+  
+    .wrap-stars16 .stars16 {
+      position: absolute;
+      top: 10vmin;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      -webkit-animation: anim 50s infinite;
+              animation: anim 50s infinite;
+    }
+    
+    .stars16 {
+      position: relative;
+      height: 25vmin;
+      width: 25vmin;
+      border-radius: 100%;
+      z-index:1000;
+    
+    
+    }
+    
+    .stars16spot {
+      color: yellow;
+      border: 3vmin solid transparent;
+      border-top-color: currentColor;
+      position: relative;
+      transform: translateY(50%);
+    }
+    
+    .stars16spot::before{
+    
+        position: absolute;
+        content: "";
+        border: inherit;
+      transform: translate(-25%, -60%) rotate(-66deg);
+    }
+    
+    .stars16spot::after{
+    
+      position: absolute;
+        content: "";
+        border: inherit;
+      transform: translate(-75%, -60%) rotate(66deg);
+    
+    }
+    .stars16spot--one {
+     
+      top: -10vmin;
+      left: 24vmin;
+    }
+    .stars16spot--two {
+     
+      top: 15vmin;
+      left: -8vmin;
+    }
+    .stars16spot--three {
+    
+      top: 12vmin;
+      left: -6vmin;
+    }
+    .stars16spot--four {
+     
+      top: 8vmin;
+      left: 6vmin;
+    }
+    .stars16spot--five {
+       top: 10vmin;
+      left: 16vmin;
+    }
+    .stars16spot--six {
+       top: 20vmin;
+      left: -10vmin;
+    }
+    .stars16spot--seven {
+       top: -10vmin;
+      left: -15vmin;
+    }
+    
+    
+  
+  
+    
+    
+    /*
+     *animate
+        */
+    @-webkit-keyframes anim {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        transform: translate3d(0, 5vmin, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    @keyframes anim {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        transform: translate3d(0, 5vmin, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .animate-anim {
+      -webkit-animation-name: anim;
+              animation-name: anim;
+    }
+    
+    @-webkit-keyframes shadow {
+      0% {
+        transform: translate3d(0, 0, 0) scale(0.9);
+      }
+      50% {
+        transform: translate3d(0, -5vmin, 0) scale(1);
+      }
+      100% {
+        transform: translate3d(0, 0, 0) scale(0.9);
+      }
+    }
+    
+    @keyframes shadow {
+      0% {
+        transform: translate3d(0, 0, 0) scale(0.9);
+      }
+      50% {
+        transform: translate3d(0, -5vmin, 0) scale(1);
+      }
+      100% {
+        transform: translate3d(0, 0, 0) scale(0.9);
+      }
+    }
+    .animate-shadow {
+      -webkit-animation-name: shadow;
+              animation-name: shadow;
+    }
+
+/*6 CLOUDS*/
+
+ 
+      
+    
+    
+    
+    
+.cloud6.cloud6one {
+  bottom: 2vmin;
+  width: 30vmin;
+  height: 10vmin;
+}
+
+.cloud6.cloud6two {
+  top: 40vmin;
+  width: 10vmin;
+  height: 4vmin;
+  animation-duration: 10s;
+}
+
+.cloud6.cloud6three {
+  top: 10vmin;
+  width: 20vmin;
+  height: 8vmin;
+  animation-duration: 8s;
+}
+
+.cloud6 {
+  position: absolute;
+  left: 0;
+  background: white;
+  border-radius: 100vmin;
+  animation: zoomies 5s infinite linear;
+}
+
+.cloud6::before {
+  content: "";
+  position: absolute;
+  top: -80%;
+  left: 10%;
+  width: 50%;
+  height: 150%;
+  background: white;
+  border-radius: 50%;
+}
+
+.cloud6::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: 20%;
+  width: 30%;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+}
+
+@keyframes zoomies {
+  from {
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    left: 100%;
+    transform: translateX(0%);
+  }
+}
+
+/*7 SNAKE*/
+
+/* I DID BORROW THE SNAKE AND TOOK A LOT OF INSPIRATION FROM https://a.singlediv.com/ THANKS LYNN FISHER!! */
+
+.snake7{
+  width: 25vmin;
+  height: 26vmin;
+  margin-left: -2vmin;
+  margin-top: 39vmin;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 50% 0,#ff5100 50%,transparent 50%),radial-gradient(ellipse at 100% 100%,black 70%,transparent 70%),linear-gradient(135deg,white 50%,transparent 50%),linear-gradient(135deg,white 50%,transparent 50%),linear-gradient(to right,white,white),radial-gradient(ellipse at 0 50%,white 70%,transparent 70%),radial-gradient(ellipse at 0 50%,black 70%,transparent 70%),radial-gradient(ellipse at 100% 100%,black 70%,transparent 70%);
+  background-size: 3% 3%,15% 14%,3% 4%,3% 4%,2% 56.3%,12% 45%,20% 60%,9% 25%;
+  background-position: 18% 10%,10% 6%,10.5% 19%,14% 19%,19.5% 15%,23% 33%,26% 6%,80% 52.5%;
+}
+
+
+.snake7::before{
+  height: 16%;
+  border-radius: 12vmin;
+  display: block;
+  content: '';
+  position: absolute;
+  width: 28vmin;
+  bottom: -33vmin;
+  left: -1vmin;
+  background: linear-gradient(-150deg,black 30%,transparent 30%,transparent 32.5%,black 32.5%);
+}
+.snake7::after{
+  width: 20vmin;
+  bottom: -29vmin;
+  left: 2vmin;
+  background: linear-gradient(160deg,black 45%,transparent 45%,transparent 49%,black 49%);
+  height: 16%;
+  border-radius: 12vmin;
+  display: block;
+  content: '';
+  position: absolute;
+}
+ /*11 WHIP*/
+  
+         
+         
+    .whip10latigo{
+
+          
+        width: 20vmin;
+        height: 1vmin;
+        background-color: brown;
+        border-bottom: .5vmin solid rgb(189, 52, 52);
+        border-top: .5vmin solid rgb(159, 43, 43);
+
+        position: absolute;
+        bottom: 25vmin;
+        left:5vmin;
+        border-radius: 15%;
+        transform: rotate(-30deg);
+        
+
+            }
+
+            .whip10latigo::before{
+              content: "";
+              width: 2vmin;
+              height: 2vmin;
+              border-bottom: 2vmin solid transparent;
+              border-left: 2vmin solid transparent;
+              border-top: 2vmin solid brown;
+              border-right: 2vmin solid transparent;
+
+      
+              position: absolute;
+              bottom: -2vmin;
+              left:-1vmin;
+              border-radius: 50%;
+              transform: rotate(-90deg);
+
+            }
+
+            .whip10latigo::after{
+              content: "";
+              width: 2vmin;
+              height: 2vmin;
+              border-bottom: 2vmin solid transparent;
+              border-left: 2vmin solid transparent;
+              border-top: 2vmin solid brown;
+              border-right: 2vmin solid transparent;
+
+      
+              position: absolute;
+              bottom: -2vmin;
+              left:16vmin;
+              border-radius: 50%;
+              transform: rotate(90deg);
+            }
+
+            .whip10cuerdas{
+
+              width: 20vmin;
+              height: 20vmin;
+              border-bottom: .5vmin solid transparent;
+              border-left: .5vmin solid transparent;
+              border-top: .5vmin solid beige;
+              border-right: .5vmin solid transparent;
+      
+              position: absolute;
+              bottom: -17vmin;
+              left:3vmin;
+              border-radius: 50%;
+              transform: rotate(90deg);
+
+            }
+
+            .whip10cuerdas::before{
+content: "";
+              width: 20vmin;
+              height: 20vmin;
+              border-bottom: .5vmin solid transparent;
+              border-left: .5vmin solid transparent;
+              border-top: .5vmin solid beige;
+              border-right: .5vmin solid transparent;
+      
+              position: absolute;
+              bottom: 6vmin;
+              left:2vmin;
+              border-radius: 50%;
+              transform: rotate(-50deg);
+
+
+            }
+
+            .whip10cuerdas::after{
+              content: "";
+                            width: 15vmin;
+                            height: 22vmin;
+                            border-bottom: .5vmin solid transparent;
+                            border-left: .5vmin solid transparent;
+                            border-top: .5vmin solid beige;
+                            border-right: .5vmin solid transparent;
+                    
+                            position: absolute;
+                            bottom: -2vmin;
+                            left:-1.9vmin;
+                            border-radius: 50%;
+                            transform: rotate(10deg);
+              
+              
+                          }
+          .whip10cuerdas2{
+            width:5vmin;
+            height: 5vmin;
+            border-bottom: .5vmin solid transparent;
+            border-left: .5vmin solid transparent;
+            border-top: .5vmin solid beige;
+            border-right: .5vmin solid transparent;
+    
+            position: absolute;
+            bottom: -5vmin;
+            left:-2vmin;
+            border-radius: 50%;
+            transform: rotate(-50deg);
+            z-index:-1;
+          }
+
+          .whip10cuerdas2::after{
+            content:"";
+            width:12vmin;
+            height: 19vmin;
+            border-bottom: .5vmin solid transparent;
+            border-left: .5vmin solid transparent;
+            border-top: .5vmin solid rgb(110, 79, 6);
+            border-right: .5vmin solid transparent;
+    
+            position: absolute;
+            bottom: -22vmin;
+            left:2vmin;
+            border-radius: 50%;
+            transform: rotate(110deg);
+          }
+
+          .whip10cuerdas2::before{
+            content:"";
+            width:18vmin;
+            height: 25vmin;
+            border-bottom: .5vmin solid transparent;
+            border-left: .5vmin solid transparent;
+            border-top: .5vmin solid rgb(193, 193, 6);
+            border-right: .5vmin solid transparent;
+    
+            position: absolute;
+            bottom: -25vmin;
+            left:-3vmin;
+            border-radius: 50%;
+            transform: rotate(110deg);
+          }
+
+          .whip10cuerdas3{
+            width:5vmin;
+            height: 5vmin;
+            border-bottom: .5vmin solid transparent;
+            border-left: .5vmin solid transparent;
+            border-top: .5vmin solid beige;
+            border-right: .5vmin solid transparent;
+    
+            position: absolute;
+            bottom: -5vmin;
+            left:-3.6vmin;
+            border-radius: 50%;
+            transform: rotate(-40deg);
+          }
+
+          .whip10cuerdas3::after{
+            content: "";
+            width:5vmin;
+            height: 5vmin;
+            border-bottom: .5vmin solid transparent;
+            border-left: .5vmin solid transparent;
+            border-top: .5vmin solid rgb(87, 107, 15);
+            border-right: .5vmin solid transparent;
+    
+            position: absolute;
+            bottom: .2vmin;
+            left:-.9vmin;
+            border-radius: 50%;
+            transform: rotate(20deg);
+          }
+
+          
+          .whip10cuerdas3::before{
+            content: "";
+            width:15vmin;
+            height: 15vmin;
+            border-bottom: .5vmin solid transparent;
+            border-left: .5vmin solid transparent;
+            border-top: .5vmin solid rgb(87, 107, 15);
+            border-right: .5vmin solid transparent;
+    
+            position: absolute;
+            bottom: -21vmin;
+            left:6vmin;
+            border-radius: 50%;
+            transform: rotate(-620deg);
+          }
+
+
+          .whip10rebenque{         
+            width: 20vmin;
+            height: 1vmin;
+            background-color: brown;
+            border-bottom: .5vmin solid rgb(189, 52, 52);
+            border-top: .5vmin solid rgb(159, 43, 43);
+    
+            position: absolute;
+            bottom: 20vmin;
+            left:7vmin;
+            border-radius: 15%;
+            transform: rotate(60deg);
+            box-shadow:-15vmin 0vmin 0 -.4vmin yellow;
+            
+    
+                }
+
+          .whip10rebenque::before{
+            content: "";
+            width: 3vmin;
+            height: 3vmin;
+            border-bottom: 3vmin solid transparent;
+            border-left: 3vmin solid transparent;
+            border-top:3vmin solid brown;
+            border-right: 3vmin solid transparent;
+            z-index:10;
+
+    
+            position: absolute;
+            bottom: -3vmin;
+            left:-2vmin;
+            border-radius: 50%;
+            transform: rotate(-90deg);
+
+          }
+
+          .whip10rebenque::after{
+            content: "";
+            width: 2vmin;
+            height: 2vmin;
+            border-bottom: 2vmin solid transparent;
+            border-left: 2vmin solid transparent;
+            border-top: 2vmin solid brown;
+            border-right: 2vmin solid transparent;
+
+    
+            position: absolute;
+            bottom: -2vmin;
+            left:16vmin;
+            border-radius: 50%;
+            transform: rotate(90deg);        
+
+  
+
+          }
+
+          .whip10lines{
+z-index:100000000;
+            width: 30vmin;
+            height: 15vmin;
+            margin-left: -23vmin;
+            margin-top: -8vmin;
+            transform: rotate(-90deg);        
+
+            background: 
+            
+          
+            linear-gradient(120deg,rgba(205,133,63,0) 10%,yellow 11%,#cd853f 89%,rgba(205,133,63,0) 90%) 50% 100%/1vmin 100%,
+          
+            linear-gradient(70deg,rgba(210,105,30,0) 10%,#d2691e 11%,#d2691e 89%,rgba(210,105,30,0) 90%) 48% 110%/1vmin 86%,
+            
+              linear-gradient(60deg,rgba(255,255,255,0) 55%,green 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 20% 80%/16vmin 60%,
+
+              linear-gradient(54deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 20% 80%/16vmin 60%,
+          
+            linear-gradient(-71deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 80% 70%/15vmin 90%,
+            linear-gradient(101deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 60% 10%/15vmin 90%,
+             linear-gradient(71deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 20% 70%/15vmin 90%,
+          
+              linear-gradient(77deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 30% 70%/12vmin 90%,
+          
+             linear-gradient(-61deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 90% 200%/20vmin 90%,
+
+             linear-gradient(-65deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 90% 200%/20vmin 90%,
+             linear-gradient(-50deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 90% 200%/20vmin 90%,
+
+             linear-gradient(-90deg,rgba(210,105,30,0) 55%,yellow 51%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 70% 20%/20vmin 90%,
+             linear-gradient(-85deg,rgba(210,105,30,0) 55%,yellow 51%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 73% 20%/20vmin 90%,
+             linear-gradient(-80deg,rgba(210,105,30,0) 55%,yellow 51%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 70% 20%/20vmin 90%,
+             linear-gradient(-80deg,rgba(210,105,30,0) 55%,yellow 51%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 78% 20%/20vmin 90%,
+             linear-gradient(-80deg,rgba(210,105,30,0) 55%,yellow 51%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 80% 20%/20vmin 90%,
+             linear-gradient(60deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 1% 20%/20vmin 90%,
+             linear-gradient(70deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 10% 20%/20vmin 90%,
+             linear-gradient(75deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 15% 20%/20vmin 90%,
+             linear-gradient(80deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 20% 20%/20vmin 90%,
+             linear-gradient(85deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 25% 20%/20vmin 90%
+            ;
+          
+            
+          
+            background-repeat: no-repeat;
+          
+          }
+    
+ 
+
+/*5 TREE*/
+
+
+    
+  
+    .tree5wood{
+      background: brown;
+      height: 20vmin;
+      width:5vmin;
+      position: absolute;
+      bottom:0vmin;
+      left: 17vmin;
+      box-shadow:.5vmin -14vmin 0 -1.5vmin brown;
+    
+    }
+    .tree5wood::before{
+      content:"";
+      height: 2vmin;
+      width:15vmin;
+      position: absolute;
+      bottom:22vmin;
+      left: 1vmin;  
+      background: brown;
+      transform: rotate(-45deg);
+      box-shadow:-6.5vmin 3vmin 0 0 brown;
+    
+    
+    
+    
+    
+    }
+    
+    
+    .tree5wood::after{
+      content:"";
+      height: 2vmin;
+      width:15vmin;
+      position: absolute;
+      bottom:22vmin;
+      left: -10vmin;  
+      background: brown;
+      transform: rotate(45deg);
+      box-shadow:4vmin 3vmin 0 0 brown;
+    
+    
+    
+    
+    }
+    
+    
+    .tree5green{
+      background: green;
+      height: 5vmin;
+      width:10vmin;
+      border-left: .1vmin solid grey;
+      border-right: .1vmin solid grey;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 27vmin;
+      left: 5vmin;
+      box-shadow:18vmin 9.5vmin 0 0 green,22vmin 1vmin 0 0 green,-1vmin 6.5vmin 0 0 green,10vmin -3vmin 0 0 green;
+    
+    
+    }
+
+/*10 SCYTHE*/
+
+
+
+    
+  
+    
+    
+  
+    
+   
+    
+  
+    
+    
+   
+    
+     
+          
+    
+         
+    
+   
+          
+          
+    
+.containerScythe{
+  position: absolute;
+  left: 0.5vmin;
+  top: 3.1vmin;
+}
+
+
+
+.Scythe10{               
+width: 50vmin;
+height: 30vmin;
+position: absolute;
+top:40vmin;
+left:-4vmin;
+border-radius: 50%;
+transform: rotate(130deg);
+border-left:5vmin solid transparent;
+border-top:0vmin solid red;
+border-bottom:5vmin solid rgb(24, 23, 36);
+z-index:10;
+}
+
+
+
+.Scythe10grip {
+width: 3vmin;
+height: 35vmin;
+background-color: #854442;
+position: absolute;
+top: 33.5vmin;
+left: 26.9vmin;
+z-index: 1000;
+transform: rotate(-15deg);
+
+}
+
+
+.Scythe10yellow{
+position:relative;
+box-sizing: border-box;
+width: 30vmin;
+height: 38vmin;
+margin-left: 5vmin;
+margin-top: 40vmin;
+transform: rotate(180deg);
+
+background: repeating-linear-gradient(to bottom,rgb(154, 67, 67),#d2691e 20%) 48.5% 75%/8vmin 2vmin,
+
+
+
+linear-gradient(60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 20% 80%/16vmin 60%,
+
+linear-gradient(-71deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 80% 70%/15vmin 90%,
+linear-gradient(101deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 60% 10%/15vmin 90%,
+linear-gradient(71deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 20% 70%/15vmin 90%,
+
+linear-gradient(77deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 30% 70%/12vmin 90%,
+
+linear-gradient(78deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 30% 70%/12vmin 90%,
+linear-gradient(61deg,
+rgba(210,105,30,0) 55%,
+yellow 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 60% 200%/20vmin 70%,
+
+linear-gradient(67deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 20% 200%/20vmin 90%,
+
+linear-gradient(67deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 2% 200%/20vmin 90%,
+linear-gradient(69deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 5% 200%/20vmin 98%,
+
+linear-gradient(-69deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 85% 200%/20vmin 98%,
+
+
+linear-gradient(-79deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 85% 200%/20vmin 98%,
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 25% 200%/20vmin 98%,
+
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 29% 200%/20vmin 98%,
+
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 35% 200%/20vmin 98%,
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 45% 200%/20vmin 98%,
+
+linear-gradient(100deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 25% 200%/20vmin 98%,
+
+linear-gradient(-59deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 85% 200%/20vmin 98%,
+
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(179, 227, 9) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 25% 200%/30vmin 98%,
+linear-gradient(-90deg,
+rgba(210,105,30,0) 55%,
+rgb(179, 227, 9) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 25% 200%/40vmin 98%,
+
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(179, 227, 9) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 45% 200%/10vmin 88%,
+
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(179, 227, 9) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 35% 200%/10vmin 78%,
+
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(179, 227, 9) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 45% 200%/10vmin 78%,
+
+linear-gradient(90deg,
+rgba(210,105,30,0) 55%,
+rgb(179, 227, 9) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 55% 200%/10vmin 78%,
+
+linear-gradient(-100deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 25% 200%/20vmin 98%,
+linear-gradient(-100deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 65% 200%/20vmin 98%,
+
+linear-gradient(-90deg,
+rgba(210,105,30,0) 55%,
+rgb(186, 145, 11) 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 75% 200%/20vmin 98%,
+
+linear-gradient(-60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 70% 80%/6vmin 90%,
+
+
+linear-gradient(60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 7%) 45% 80%/6vmin 90%,
+
+linear-gradient(60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 40% 80%/6vmin 90%,
+linear-gradient(60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 30% 80%/6vmin 90%,
+
+linear-gradient(60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 50% 80%/6vmin 90%,
+
+linear-gradient(-60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 60% 80%/6vmin 90%,
+
+
+linear-gradient(-68deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 60% 80%/6vmin 90%,
+
+
+linear-gradient(68deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 40% 80%/6vmin 90%,
+
+linear-gradient(-60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 50% 80%/6vmin 90%,
+
+linear-gradient(88deg,rgba(255,255,255,0) 55%,rgb(30, 195, 8) 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 50% 80%/6vmin 90%,
+linear-gradient(80deg,rgba(255,255,255,0) 55%,rgb(30, 195, 8) 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 50% 80%/6vmin 90%,
+
+linear-gradient(-80deg,rgba(255,255,255,0) 55%,rgb(30, 195, 8) 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 50% 80%/16vmin 90%,
+linear-gradient(80deg,rgba(255,255,255,0) 55%,rgb(30, 195, 8) 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 50% 80%/16vmin 90%,
+
+linear-gradient(60deg,rgba(255,255,255,0) 55%,yellow 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 44% 80%/6vmin 90%,
+
+linear-gradient(-69deg,
+rgba(210,105,30,0) 55%,
+yellow 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 90% 200%/20vmin 90%,
+
+linear-gradient(-66deg,
+rgba(210,105,30,0) 55%,
+yellow 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 90% 200%/20vmin 90%,
+linear-gradient(-59deg,
+rgba(210,105,30,0) 55%,
+yellow 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 90% 200%/20vmin 90%,
+
+
+
+linear-gradient(66deg,
+rgba(210,105,30,0) 55%,
+yellow 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 40% 200%/20vmin 90%,
+linear-gradient(59deg,
+rgba(210,105,30,0) 55%,
+yellow 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 70%) 0% 200%/20vmin 90%,
+
+linear-gradient(89deg,
+rgba(210,105,30,0) 55%,
+yellow 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 70%) 0% 200%/20vmin 90%,
+
+linear-gradient(-61deg,
+rgba(210,105,30,0) 55%,
+yellow 56%,
+rgba(23, 193, 11, 0.2) 50%,
+rgba(210,105,30,0) 50%) 90% 200%/20vmin 90%
+;
+
+
+
+background-repeat: no-repeat;
+}
+
+.flowers::before{
+content:"";
+width: 5vmin;
+height: 6vmin;
+left: 10vmin;
+top: 40vmin;
+border-top-left-radius: 60%;
+border-bottom-right-radius: 60%;
+}
+.flowers::after{
+content:"";
+width: 5vmin;
+height: 6vmin;
+left: -4vmin;
+top: -8vmin;
+border-top-right-radius: 60%;
+border-bottom-left-radius: 60%;
+
+}
+    
+/*15 BEAR*/
+    
+            .pic15 {
+              top:26vmin;
+              width: 15vmin;
+              height: 30vmin;
+              margin: 0 auto;
+              position: relative;
+            }
+            
+            .bear15face {
+              width: 100%;
+              height: 100%;
+              background: #573c16;
+              padding-top: 5vmin;
+              border-radius: 8vmin;
+              border-top-left-radius: 10vmin 8vmin;
+              border-top-right-radius: 10vmin 8vmin;
+              position: relative;
+              z-index: 10;
+              box-shadow: inset #432e11 0 -3vmin 0 0;
+            }
+            .bear15face:after, .bear15face:before {
+              content: "";
+              width: 4vmin;
+              height: 11vmin;
+              background: #573c16;
+              position: absolute;
+              bottom: 6vmin;
+              box-shadow: inset #432e11 0 -1vmin 0 0;
+              border-radius:50%
+            }
+            .bear15face:after {
+              left: -3vmin;
+              transform: rotate(35deg);
+            
+              border-top-left-radius: 100%;
+              border-bottom-left-radius: 4vmin;
+            }
+            .bear15face:before {
+              right: -3vmin;
+                transform: rotate(-35deg);
+            
+              border-top-right-radius: 100%;
+              border-bottom-right-radius: 4vmin;
+            }
+            
+            
+            
+            
+            .bear15ear {
+              height: 10vmin;
+              width: 4vmin;
+              background: #573c16;
+              position: absolute;
+              top: 1vmin;
+              border-radius: 2vmin 2vmin 0vmin 0vmin;
+              z-index: 0;
+            }
+            .bear15ear.bear15right {
+              right: 0;
+              transform: rotate(35deg);
+            }
+            .bear15ear.bear15left {
+              left: 0;
+              transform: rotate(-35deg);
+            }
+            .bear15ear:after {
+              content: "";
+              width: 2vmin;
+              height: 4vmin;
+              background: #aea07d;
+              position: absolute;
+              top: 1vmin;
+              left: 50%;
+              margin-left: -1vmin;
+              border-radius: 1.5vmin 1.5vmin 0vmin 0vmin;
+              box-shadow: inset #99885f -0.5vmin 0.2vmin 0 0;
+            }
+            
+            
+            
+            .bear15cheeks {
+              width: 6vmin;
+              height: 7vmin;
+              margin: 0 auto;
+              background: #aea07d;
+              border-radius: 2vmin;
+              border-top-left-radius: 4vmin 3vmin;
+              border-top-right-radius: 4vmin 3vmin;
+              padding-top: 1vmin;
+              box-shadow: inset #99885f 0 -0.5vmin 0 0, #432e11 -0.5vmin 0.5vmin 0 0;
+            }
+            .bear15cheeks .bear15nose {
+              width: 3vmin;
+              height: 0.5vmin;
+              margin: 0 auto;
+              background: #000000;
+              border-top-left-radius: 1.5vmin 1vmin;
+              border-top-right-radius: 1.5vmin 1vmin;
+              position: relative;
+            }
+            .bear15cheeks .bear15nose:after {
+              position: absolute;
+              content: "";
+              top: 100%;
+              border-top: 1vmin solid #000000;
+              border-right: 1.5vmin solid transparent;
+              border-left: 1.5vmin solid transparent;
+              z-index: 200;
+            }
+            .bear15cheeks .bear15mouth {
+              height: 3vmin;
+              width: 0.2vmin;
+              background: #573c16;
+              margin: 0 auto;
+              position: relative;
+            }
+            .bear15cheeks .bear15mouth:before {
+              content: "";
+              position: absolute;
+              bottom: -1vmin;
+              left: -1.2vmin;
+              border-bottom: 0.8vmin solid #aea07d;
+              border-right: 1.3vmin solid transparent;
+              border-left: 1.3vmin solid transparent;
+              z-index: 100;
+            }
+            .bear15cheeks .bear15mouth:after {
+              content: "";
+              position: absolute;
+              bottom: -0.9vmin;
+              left: -1.4vmin;
+              border-bottom: 1vmin solid #573c16;
+              border-right: 1.55vmin solid transparent;
+              border-left: 1.55vmin solid transparent;
+              z-index: 90;
+            }
+            
+            .bear15belly {
+              width: 8vmin;
+              height: 8vmin;
+              background: #aea07d;
+              margin: 6vmin auto 0;
+              border-radius: 50%;
+              border-top-left-radius: 4vmin 3vmin;
+              border-top-right-radius: 4vmin 3vmin;
+            }
+            
+            .bear15foot {
+              position: absolute;
+              bottom: -1vmin;
+              width: 6vmin;
+              height: 7vmin;
+              border-radius: 3vmin;
+              border-top-left-radius: 6vmin 4vmin;
+              border-top-right-radius: 6vmin 4vmin;
+              background: #573c16;
+              box-shadow: inset 0 0.5vmin 0 0 #6c4a1b, inset 0 -1vmin 0 0 #432e11;
+              z-index: 200;
+            }
+            .bear15foot.bear15right {
+              right: -1vmin;
+              transform: rotate(10deg);
+            }
+            .bear15foot.bear15left {
+              left: -1vmin;
+              transform: rotate(-10deg);
+            }
+            .bear15foot .bear15pads {
+              width: 3vmin;
+              height: 2vmin;
+              background: #aea07d;
+              margin: 3vmin auto 0;
+              border-radius: 1vmin;
+            }
+            
+          
+/*14 FOX*/
+
+  
+    
+    .pic14{
+    
+      width: 35vmin;
+      height: 24vmin;
+      left: 1vmin;
+      top: 57.5vmin;
+      position: absolute;
+    
+      background-repeat: no-repeat;
+      background-image: radial-gradient(circle at 50% 29vmin,rgba(160,82,45,0) 60%,#a0522d 60.1%),radial-gradient(ellipse at 100% 200%,transparent 77%,#703a20 65.5%),radial-gradient(ellipse at 0 200%,transparent 78%,#703a20 65.5%);
+      background-size: 100% 100%,40% 80%,40% 80%,.4vmin .4vmin,.4vmin .4vmin,1.2vmin .8vmin,2.8vmin 2vmin,4.9vmin 2.5vmin,1vmin 1vmin,4vmin 2.5vmin,4vmin 3vmin,1.5vmin 2vmin,1.5vmin 2vmin,1.2vmin .6vmin,1.2vmin .6vmin;
+      background-position: 0 0,10% 100%,90% 100%,45% 70%,55% 70%,50% 80%,50% 87%,50% 86%,50% 100%,50% 92%,50% 100%,42.5% 62%,57.5% 62%,40% 100%,60% 100%;
+      border-radius: 20vmin 20vmin 0 0;
+    }
+    
+    
+    .pic14:before{
+      content: "";
+    
+      width: 8vmin;
+      height: 35vmin;
+      position: absolute;
+    
+      left:-.7vmin;
+      top:-30vmin;
+      background-color: #a0522d;
+      background-image: radial-gradient(circle at 80% 0,white 30%,rgba(255,255,255,0) 30.5%);
+      border-radius: 0 20vmin;
+    
+    }
+    
+    
+    
+    
+    
+    .pic14:after {
+      content: "";
+      position: absolute;
+      width: 20.9vmin;
+      height: 17vmin;
+      right: -3.5vmin;
+      top: -10vmin;
+      background-repeat: no-repeat;
+      background-image: radial-gradient(ellipse at 20% 100%,white 70%,rgba(255,255,255,0) 70.5%),radial-gradient(ellipse at 80% 100%,white 70%,rgba(255,255,255,0) 70.5%),radial-gradient(circle,black 50%,rgba(0,0,0,0) 51%),radial-gradient(circle,black 50%,rgba(0,0,0,0) 51%),radial-gradient(ellipse,black 50%,rgba(0,0,0,0) 51%),radial-gradient(ellipse at 50% 90%,#a0522d 63%,rgba(160,82,45,0) 63.5%),radial-gradient(ellipse at 0 100%,#a0522d 60%,rgba(160,82,45,0) 60.5%),radial-gradient(ellipse at 0 100%,#703a20 60%,rgba(160,82,45,0) 60.5%),radial-gradient(ellipse at 100% 100%,#a0522d 60%,rgba(160,82,45,0) 60.5%),radial-gradient(ellipse at 100% 100%,#703a20 60%,rgba(160,82,45,0) 60.5%);
+      background-size: 10vmin 7vmin,10vmin 7vmin,1vmin 1vmin,1vmin 1vmin,2vmin 2vmin,20vmin 9vmin,8vmin 18vmin,10vmin 16vmin,7vmin 14vmin,10vmin 14vmin;
+      background-position: 0 100%,100% 100%,41% 70%,59% 70%,50% 95%,50% 100%,14% 0,18% 0,86% 0,82% 0;
+      border-radius: 0 0 10vmin 10vmin;
+    }
+
+/*19 TOWER*/
+
+
+.containerTower {
+  margin:auto;
+  left:calc(35vmin /10);
+
+}
+
+.flex {
+  position:relative;
+
+  display:flex;  
+  bottom:-10vmin;
+
+}
+
+.brick {
+  width:calc(50vmin/10);
+  height:calc(22vmin/10);
+  border:calc(3vmin/10) solid #9B1C1C;
+  background:#d62828;
+  border-radius:calc(2vmin/10);
+  box-sizing:border-box;
+  }
+
+.hbrick {
+  width:calc(25vmin/10);
+  height:calc(22vmin/10);
+  border:calc(3vmin/10) solid #9B1C1C;
+  background:#d62828;
+  border-radius:calc(2vmin/10);
+  box-sizing:border-box;
+}
+
+.towertriangle{
+  width: 10vmin;
+  height: 10vmin;
+  display: block;
+  top:-65.9vmin;
+  left:-2.4vmin;
+  position: relative;
+  border-top:5vmin solid transparent;
+  border-bottom:10vmin solid #9B1C1C;
+  border-left:5vmin solid transparent;
+  border-right:5vmin solid transparent;
+
+}
+
+.towerwindow{
+  width: 20vmin;
+  height: 0vmin;
+  display: block;
+  bottom:18vmin;
+  left:-10.4vmin;
+  position: relative;
+  border-radius:50%;
+  border-bottom:5vmin solid transparent;
+  border-top:15vmin solid ;
+  border-left:5vmin solid transparent;
+  border-right:5vmin solid transparent;
+
+
+}
+
+
+.towerwindow1{
+  width: 5vmin;
+  height: 5vmin;
+  display: block;
+  bottom: 69vmin;
+  left: 1vmin;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: 2vmin solid transparent;
+  border-top: 5vmin solid;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+
+
+}
+
+.towerwindow2{
+  width: 5vmin;
+  height: 5vmin;
+  display: block;
+  bottom: 89vmin;
+  left: 1vmin;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: 2vmin solid transparent;
+  border-top: 5vmin solid;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+
+}
+
+.towerwindow3{
+  width: 5vmin;
+  height: 5vmin;
+  display: block;
+  bottom: 68vmin;
+  left: 1vmin;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: 2vmin solid transparent;
+  border-top: 5vmin solid;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+
+}
+
+.towerwindow6{
+  width: 5vmin;
+  height: 5vmin;
+  display: block;
+  bottom:45vmin;
+  left:1vmin;
+  position: relative;
+  border-radius:50%;
+  border-bottom:2vmin solid transparent;
+  border-top:5vmin solid ;
+  border-left:2vmin solid transparent;
+  border-right:2vmin solid transparent;
+
+
+}
+.towerwindow4{
+  width: 5vmin;
+  height: 5vmin;
+  display: block;
+  bottom: 59.1vmin;
+  left: 25vmin;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: 2vmin solid transparent;
+  border-top: 5vmin solid;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+
+
+}
+
+.towerwindow5{
+  width: 5vmin;
+  height: 5vmin;
+  display: block;
+  bottom: 66vmin;
+  left: 14vmin;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: 2vmin solid transparent;
+  border-top: 5vmin solid;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+
+
+}
+
+/*32 MOON*/    
+    
+    
+ 
+    
+   
+    .wrap-moon32 .moon32 {
+      position: absolute;
+      top: 10vmin;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      -webkit-animation: anim 50s infinite;
+              animation: anim 50s infinite;
+    }
+    
+    .moon32 {
+      position: relative;
+      height: 25vmin;
+      width: 25vmin;
+      border-radius: 100%;
+      background-color: #ccc;
+      background-image: radial-gradient(circle at 0 50%, #e05252 0%, transparent 65%, #ddc7c7 65%);
+      z-index:1000;
+    
+    
+    }
+    
+   
+    
+    .moon32spot {
+      position: absolute;
+      border-radius: 100%;
+      background-color: #bfbfbf;
+      background-image: radial-gradient(circle at 100% 80%, #cbbcbc 0%, #a69b9b 65%, #bc9797 65%);
+    }
+    .moon32spot--one {
+      height: 3vmin;
+      width: 3vmin;
+      top: 15%;
+      left: 40%;
+    }
+    .moon32spot--two {
+      height: 6vmin;
+      width: 6vmin;
+      top: 63%;
+      left: 48%;
+    }
+    .moon32spot--three {
+      height: 6.25vmin;
+      width: 6.25vmin;
+      top: 28%;
+      left: 14%;
+    }
+    .moon32spot--four {
+      height: 4vmin;
+      width: 4vmin;
+      top: 60%;
+      left: 15%;
+    }
+    .moon32spot--five {
+      height: 3.5vmin;
+      width: 3.5vmin;
+      top: 38%;
+      left: 73%;
+    }
+    .moon32spot--six {
+      height: 1vmin;
+      width: 1vmin;
+      top: 17%;
+      left: 20%;
+    }
+    .moon32spot--seven {
+      height: 1.5vmin;
+      width: 1.5vmin;
+      top: 60%;
+      left: 35%;
+    }
+    
+    
+
+
+/*21 MOUNTAINS*/
+.pic21, .pic21b, .pic21c{
+   position: absolute;
+   bottom: 0;   
+   border-left: 15vmin solid transparent;
+   border-right: 15vmin solid transparent;
+   border-bottom: 45vmin solid grey;
+      z-index: 1;
+}
+ .pic21b { 
+  left: 19vmin;
+  bottom: -15vmin;
+  opacity: .3;
+  z-index: 0;
+              
+ }
+            
+.pic21c{
+  left: -12vmin;
+  bottom:-10vmin;
+  opacity: .5;
+  z-index: 0;
+              
+}
+            
+.pic21::after , .pic21b::after , .pic21c::after{
+content: "";
+  position: absolute;
+  top: 17vmin;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+  border-top: 4vmin solid white;
+  left: -3.3vmin;
+   }
+            
+            
+  .pic21::before, .pic21b::before , .pic21c::before{
+     content: "";
+       position: absolute;
+       top: 0vmin;
+       border-left: 6vmin solid transparent;
+       border-right: 6vmin solid transparent;
+       border-bottom: 18vmin solid white;
+       left:-6vmin;
+       }
+
+
+
+/*23 MICE*/
+
+    .mice23 {
+      top: 40vmin;
+      width: 15vmin;
+      height: 15vmin;
+      display: block;
+      margin: 10vmin auto;
+      position: relative;
+      transform: rotate(-45deg);
+      border-radius: 50% 12%;
+      border-bottom: .1vmin solid black;
+      border-left: .1vmin solid black;
+    
+    
+      background-color: grey;
+      z-index:50
+    
+    }
+    .mice23:before, .mice23:after {
+      content: "";
+      width: inherit;
+      height: inherit;
+      border: inherit;
+      background-color: inherit;
+      position: absolute;
+      border-radius: 50%;
+        z-index:50
+    
+    }
+    .mice23:before {
+      top: -11vmin;
+      left: 0;
+      transform: rotate(150deg);
+    
+    }
+    .mice23:after {
+      top: 0;
+      right: -11vmin;
+      transform: rotate(-150deg);
+    
+    }
+    .mice23eyes{
+    
+      top: 6vmin;
+      left: 4vmin;
+      width: 2vmin;
+      height: 1vmin;
+      display: block;
+      position: relative;
+      border-radius: 50%;
+      background-color:black;
+      
+      transform: rotate(132.8deg);
+    
+      box-shadow: 0vmin -5vmin 0 0;
+     
+    
+      animation: blink 2s  infinite;
+     
+          }
+          @keyframes blink {
+            0% {
+      
+                width: 2vmin;
+            }
+            5% {
+              width: 0vmin;
+            }
+            10% {
+              width: 2vmin;
+            }
+          }
+    
+    
+          .mice23nose{
+            top: 12vmin;
+      left: 1vmin;
+      width: 2vmin;
+      height: 2vmin;
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      background-color:pink;
+          }
+    
+          .mice23nose::before , .mice23nose::after{
+    content: "";
+           
+            width: 3vmin;
+            height: 3vmin;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            background-color:pink;
+    
+            z-index: 100;
+            box-shadow: 0vmin -1.5vmin 1vmin 3vmin pink;
+    
+          }
+    
+          .mice23nose::before{
+            top: -4vmin;
+            left: 14vmin; 
+            
+          }   
+    
+          .mice23nose::after{
+            top: -14vmin;
+            left: 5vmin; 
+          }
+    
+    
+          .mice23mustaches{
+    
+            width: 12vmin;
+            height:.3vmin;
+            top: 18vmin;
+            left: 2vmin;
+            display: block;
+            position: absolute;
+            background-color:black;
+    
+            z-index: 100;
+            box-shadow: -16vmin .2vmin 0 0 ;
+            transform: rotate(45deg);
+    
+          }
+    
+          .mice23mustaches::before{
+          content: "";
+            width: 12vmin;
+            height:.3vmin;
+            top: -1.4vmin;
+            left: 0vmin;
+            position: absolute;
+            background-color:black;
+            transform: rotate(-10deg);
+    
+            z-index: 100;
+            box-shadow: -16vmin .5vmin 0 0 ;
+    
+          }
+    
+          .mice23mustaches::after{
+            content: "";
+              width: 12vmin;
+              height:.3vmin;
+              top: 1.4vmin;
+              left: 0vmin;
+              position: absolute;
+              background-color:black;
+              transform: rotate(10deg);
+      
+              z-index: 100;
+              box-shadow: -16vmin -.1vmin 0 0 ;
+      
+            }
+    
+            .mice23miceBody {
+              top: -10vmin;
+              width: 20vmin;
+              height: 30vmin;
+              display: block;
+              margin: 10vmin auto;
+              position: relative;
+              border-radius: 50%;
+              border: .1vmin solid black;
+              border-left: .1vmin solid black;
+              background-color: grey;
+              box-shadow: -8vmin 16vmin 0 -8.5vmin grey, 8vmin 16vmin 0 -8.5vmin grey, -8vmin -7vmin 0 -8.5vmin grey, 8vmin -7vmin 0 -8.5vmin grey, -8vmin 16vmin 0 -8.4vmin, 8vmin 16vmin 0 -8.4vmin, -8vmin -7vmin 0 -8.4vmin, 8vmin -7vmin 0 -8.4vmin;
+            }
+    
+            .mice23tail {
+              z-index:10;
+    
+              top: -5vmin;
+              left: -1vmin;
+              width: 40vmin;
+              height: 20vmin;
+              display: block;
+              margin: 10vmin auto;
+              position: relative;
+              border-radius: 60% ;
+              border-top: 3vmin solid pink;
+              border-right: 3vmin solid transparent;
+            
+              border-bottom: 1vmin solid transparent;
+                        border-left: 2vmin solid pink;
+                        transform: rotate(75deg);
+    
+    
+            }
+    .mice23tail::before{
+      content:"";
+      z-index:10;
+    
+              top: -20vmin;
+              left: 18.9vmin;
+              width: 15vmin;
+              height: 45vmin;
+              display: block;
+              margin: 10vmin auto;
+              position: relative;
+              border-top: 2vmin solid transparent;
+              border-right: 2vmin solid transparent;
+            border-radius:50%;
+              border-bottom: 2vmin solid transparent;
+                        border-left: 2vmin solid transparent;
+                        transform: rotate(-40deg);
+    
+    }
+    
+    .mice23tail::after{
+      content:"";
+      z-index:10;
+    
+              top: -66.7vmin;
+              left: 16.1vmin;
+              width: 20vmin;
+              height: 30vmin;
+              display: block;
+              margin: 10vmin auto;
+              position: relative;
+              border-radius:50%;
+              border-top: 3vmin solid transparent;
+              border-right: 3.5vmin solid pink;
+              transform: rotate(-30deg);
+    
+            
+              border-bottom: 0vmin solid pink;
+                        border-left: 1vmin solid transparent;
+    
+    }
+    
+    
+    .mice23fingers{
+    
+      position: absolute;
+      width: .6vmin;
+      height: 1.5vmin;
+      border-radius: 50%;
+      z-index: 700;
+      box-shadow: 17.3vmin 0.5vmin 0 0 pink, 1.3vmin 0.5vmin 0 0 pink, 17.5vmin 36.7vmin 0 0 pink, 1.7vmin 36.7vmin 0 0 pink, 17.3vmin 0.5vmin 0 .1vmin, 1.3vmin 0.5vmin 0 .1vmin, 17.5vmin 36.7vmin 0 .1vmin, 1.7vmin 36.7vmin 0 .1vmin;
+    }
+    .mice23fingers::after{
+      content: "";
+      position: absolute;
+      width: 1.5vmin;
+      height: .6vmin;
+      border-radius: 50%;
+      z-index: 700;
+      box-shadow: -0.1vmin -4vmin 0 0 pink, 18.2vmin -4vmin 0 0 pink, 18.5vmin -37vmin 0 0 pink, -0.2vmin -37.5vmin 0 0 pink, -0.1vmin -4vmin 0 .1vmin, 18.2vmin -4vmin 0 .1vmin, 18.5vmin -37vmin 0 .1vmin, -0.2vmin -37.5vmin 0 .1vmin;
+    }
+    
+    .mice23fingers::before{
+    
+    
+      content: "";
+      position: absolute;
+      width: 1.3vmin;
+      height: .6vmin;
+      border-radius: 50%;
+      z-index: 700;
+      transform: rotate(-30deg);
+      box-shadow: 14.8vmin 10.6vmin 0 0 pink, -18.3vmin 32vmin 0 0 pink, 0.9vmin 2.7vmin 0 0 pink, -4.3vmin 39.4vmin 0 0 pink, 14.8vmin 10.6vmin 0 0.1vmin, -18.3vmin 32vmin 0 .1vmin, 0.9vmin 2.7vmin 0 .1vmin, -4.3vmin 39.4vmin 0 .1vmin;
+    
+    }
+
+/*26 BOOK*/
+
+
+.book26bible {
+top:30vmin;
+left:9vmin;
+width: 20vmin;
+height: 28vmin;
+position: relative;
+z-index: 900;
+transform: rotate(-45deg);
+
+}
+.book26bible .book26biblecover {
+height: 100%;
+display: grid;
+}
+.book26bible .book26biblecover .book26biblefront,
+.book26bible .book26biblecover .book26bibleback {
+grid-row: 1/-1;
+grid-column: 1/-1;
+border-radius: 1vmin;
+}
+.book26bible .book26biblecover .book26biblefront {
+background: #a57059;
+order: 1;
+margin-bottom: 3vmin;
+}
+.book26bible .book26biblecover .book26biblefront::before, .book26bible .book26biblecover .book26biblefront::after {
+content: "";
+position: absolute;
+background: #f9c75b;
+}
+.book26bible .book26biblecover .book26biblefront::before {
+width: 1vmin;
+height: 9vmin;
+top: 1.5vmin;
+left: calc(50% + .5vmin);
+z-index: 900;
+box-shadow: inset -.5vmin 0 0 0 #f7b62a;
+}
+.book26bible .book26biblecover .book26biblefront::after {
+width: 4vmin;
+height: 1vmin;
+top: 4vmin;
+left: calc(50% + 1vmin);
+transform: translateX(-50%);
+z-index: 900;
+box-shadow: inset -2vmin 0 0 0 #f7b62a;
+}
+.book26bible .book26biblecover .book26bibleback {
+background: #796e6b;
+}
+.book26bible .book26biblepages {
+position: absolute;
+bottom: .7vmin;
+right: 1vmin;
+z-index: 20;
+background: linear-gradient(-45deg, #fff 25%, #d9dadb 25%);
+height: 2.3vmin;
+width: calc(100% - 2vmin);
+border-radius: 3vmin 0 2vmin 3vmin;
+box-shadow: inset .9vmin .2vmin 0 0vmin rgba(0, 0, 0, 0.3);
+}
+.book26bible .book26biblepages::before, .book26bible .book26biblepages::after {
+content: "";
+position: absolute;
+}
+.book26bible .book26biblepages::before {
+top: 50%;
+left: 1vmin;
+background: #f37150;
+width: .5vmin;
+height: 2.5vmin;
+}
+.book26bible .book26biblepages::after {
+width: 0;
+height: 0;
+bottom: -1.5vmin;
+border: .4vmin solid var(--canvas);
+border-color: transparent transparent var(--canvas) transparent;
+left: .9vmin;
+}
+.book26bible .book26biblebinding {
+background: #52403d;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+z-index: 10;
+width: 3vmin;
+border-radius: 1vmin 0 0 1vmin;
+}
+/*25 RING*/
+
+
+
+    .Ring25wrap {
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 61%;
+      left: 50%;
+      transform-origin: 0 0;
+      transform-style: preserve-3d;
+      overflow: visible;
+    }
+    .Ring25triangle {
+      position: absolute;
+      left: -10.0vmin;
+      top: -3.0vmin;
+      width: 0;
+      height: 0;
+      border-left: 10.0vmin solid transparent;
+      border-right: 10.0vmin solid transparent;
+      border-bottom: 10.0vmin solid #33afff;
+      animation: lighting 12s infinite linear;
+    }
+    
+    /** Bottom Down **/
+    .Ring25triangle.Ring25bottom {
+      transform-origin: 50% 0;
+    }
+    .Ring25triangle.Ring25bottom.Ring25face-1 {
+      animation-delay: -2.5s;
+      transform: translateY(9.0vmin) rotateY(0) rotateX(35deg) scaleX(0.24)
+        scaleY(-1);
+    }
+    .Ring25triangle.Ring25bottom.Ring25face-2 {
+      animation-delay: -3.5s;
+      transform: translateY(9.0vmin) rotateY(45deg) rotateX(35deg) scaleX(0.24)
+        scaleY(-1);
+    }
+    .Ring25triangle.Ring25bottom.Ring25face-3 {
+      animation-delay: -4.5s;
+      transform: translateY(9.0vmin) rotateY(90deg) rotateX(35deg) scaleX(0.24)
+        scaleY(-1);
+    }
+    .Ring25triangle.Ring25bottom.Ring25face-4 {
+      animation-delay: -5.5s;
+      transform: translateY(9.0vmin) rotateY(135deg) rotateX(35deg) scaleX(0.24)
+        scaleY(-1);
+    }
+    .Ring25triangle.Ring25bottom.Ring25face-5 {
+      animation-delay: -6.5s;
+      transform: translateY(9.0vmin) rotateY(180deg) rotateX(35deg) scaleX(0.24)
+        scaleY(-1);
+    }
+    .Ring25triangle.Ring25bottom.Ring25face-6 {
+      animation-delay: -7.5s;
+      transform: translateY(9.0vmin) rotateY(225deg) rotateX(35deg) scaleX(0.24)
+        scaleY(-1);
+    }
+    .Ring25triangle.Ring25bottom.Ring25face-7 {
+      animation-delay: -8.5s;
+      transform: translateY(9.0vmin) rotateY(270deg) rotateX(35deg) scaleX(0.24)
+        scaleY(-1);
+    }
+    .Ring25triangle.Ring25bottom.Ring25face-8 {
+      animation-delay: -9.5s;
+      transform: translateY(9.0vmin) rotateY(315deg) rotateX(35deg) scaleX(0.24)
+        scaleY(-1);
+    }
+    
+    /** Middle Down **/
+    .Ring25triangle.Ring25middle-bottom {
+      transform-origin: 50% 0;
+    }
+    .Ring25triangle.Ring25middle-bottom.Ring25face-1 {
+      animation-delay: -3.5s;
+      transform: rotateY(0deg) translateY(-1.1vmin) translateZ(-3.4vmin) rotateX(-50deg)
+        scaleX(0.24) scaleY(0.3);
+    }
+    .Ring25triangle.Ring25middle-bottom.Ring25face-2 {
+      animation-delay: -4.5s;
+      transform: rotateY(45deg) translateY(-1.1vmin) translateZ(-3.4vmin) rotateX(-50deg)
+        scaleX(0.24) scaleY(0.3);
+    }
+    .Ring25triangle.Ring25middle-bottom.Ring25face-3 {
+      animation-delay: -5.5s;
+      transform: rotateY(90deg) translateY(-1.1vmin) translateZ(-3.4vmin) rotateX(-50deg)
+        scaleX(0.24) scaleY(0.3);
+    }
+    .Ring25triangle.Ring25middle-bottom.Ring25face-4 {
+      animation-delay: -6.5s;
+      transform: rotateY(135deg) translateY(-1.1vmin) translateZ(-3.4vmin) rotateX(-50deg)
+        scaleX(0.24) scaleY(0.3);
+    }
+    .Ring25triangle.Ring25middle-bottom.Ring25face-5 {
+      animation-delay: -7.5s;
+      transform: rotateY(180deg) translateY(-1.1vmin) translateZ(-3.4vmin) rotateX(-50deg)
+        scaleX(0.24) scaleY(0.3);
+    }
+    .Ring25triangle.Ring25middle-bottom.Ring25face-6 {
+      animation-delay: -8.5s;
+      transform: rotateY(225deg) translateY(-1.1vmin) translateZ(-3.4vmin) rotateX(-50deg)
+        scaleX(0.24) scaleY(0.3);
+    }
+    .Ring25triangle.Ring25middle-bottom.Ring25face-7 {
+      animation-delay: -9.5s;
+      transform: rotateY(270deg) translateY(-1.1vmin) translateZ(-3.4vmin) rotateX(-50deg)
+        scaleX(0.24) scaleY(0.3);
+    }
+    .Ring25triangle.Ring25middle-bottom.Ring25face-8 {
+      animation-delay: -10.5s;
+      transform: rotateY(315deg) translateY(-1.1vmin) translateZ(-3.4vmin) rotateX(-50deg)
+        scaleX(0.24) scaleY(0.3);
+    }
+    
+    /** Middle Up **/
+    .Ring25triangle.Ring25middle-top {
+      transform-origin: 50% 100%;
+    }
+    .Ring25triangle.Ring25middle-top.Ring25face-1 {
+      animation-delay: -2.5s;
+      transform: rotateY(22.5deg) translateY(-11.1vmin) translateZ(-3.1vmin)
+        rotateX(-58deg) scaleX(0.13) scaleY(-0.36);
+    }
+    .Ring25triangle.Ring25middle-top.Ring25face-2 {
+      animation-delay: -3.5s;
+      transform: rotateY(67.5deg) translateY(-11.1vmin) translateZ(-3.1vmin)
+        rotateX(-58deg) scaleX(0.13) scaleY(-0.36);
+    }
+    .Ring25triangle.Ring25middle-top.Ring25face-3 {
+      animation-delay: -4.5s;
+      transform: rotateY(112.5deg) translateY(-11.1vmin) translateZ(-3.1vmin)
+        rotateX(-58deg) scaleX(0.13) scaleY(-0.36);
+    }
+    .Ring25triangle.Ring25middle-top.Ring25face-4 {
+      animation-delay: -5.5s;
+      transform: rotateY(157.5deg) translateY(-11.1vmin) translateZ(-3.1vmin)
+        rotateX(-58deg) scaleX(0.13) scaleY(-0.36);
+    }
+    .Ring25triangle.Ring25middle-top.Ring25face-5 {
+      animation-delay: -6.5s;
+      transform: rotateY(202.5deg) translateY(-11.1vmin) translateZ(-3.1vmin)
+        rotateX(-58deg) scaleX(0.13) scaleY(-0.36);
+    }
+    .Ring25triangle.Ring25middle-top.Ring25face-6 {
+      animation-delay: -7.5s;
+      transform: rotateY(247.5deg) translateY(-11.1vmin) translateZ(-3.1vmin)
+        rotateX(-58deg) scaleX(0.13) scaleY(-0.36);
+    }
+    .Ring25triangle.Ring25middle-top.Ring25face-7 {
+      animation-delay: -8.5s;
+      transform: rotateY(292.5deg) translateY(-11.1vmin) translateZ(-3.1vmin)
+        rotateX(-58deg) scaleX(0.13) scaleY(-0.36);
+    }
+    .Ring25triangle.Ring25middle-top.Ring25face-8 {
+      animation-delay: -9.5s;
+      transform: rotateY(337.5deg) translateY(-11.1vmin) translateZ(-3.1vmin)
+        rotateX(-58deg) scaleX(0.13) scaleY(-0.36);
+    }
+    
+    /** Top Up **/
+    .Ring25triangle.Ring25up {
+      animation: lighting-lighter 12s infinite linear;
+      transform-origin: 50% 0;
+    }
+    .Ring25triangle.Ring25up.Ring25face-1 {
+      animation-delay: -3.5s;
+      transform: rotateY(22.5deg) translateY(-2.2vmin) translateZ(0vmin) rotateX(-70deg)
+        scaleX(0.13) scaleY(0.33);
+    }
+    .Ring25triangle.Ring25up.Ring25face-2 {
+      animation-delay: -4.5s;
+      transform: rotateY(67.5deg) translateY(-2.2vmin) translateZ(0vmin) rotateX(-70deg)
+        scaleX(0.13) scaleY(0.33);
+    }
+    .Ring25triangle.Ring25up.Ring25face-3 {
+      animation-delay: -5.5s;
+      transform: rotateY(112.5deg) translateY(-2.2vmin) translateZ(0vmin) rotateX(-70deg)
+        scaleX(0.13) scaleY(0.33);
+    }
+    .Ring25triangle.Ring25up.Ring25face-4 {
+      animation-delay: -6.5s;
+      transform: rotateY(157.5deg) translateY(-2.2vmin) translateZ(0vmin) rotateX(-70deg)
+        scaleX(0.13) scaleY(0.33);
+    }
+    .Ring25triangle.Ring25up.Ring25face-5 {
+      animation-delay: -7.5s;
+      transform: rotateY(202.5deg) translateY(-2.2vmin) translateZ(0vmin) rotateX(-70deg)
+        scaleX(0.13) scaleY(0.33);
+    }
+    .Ring25triangle.Ring25up.Ring25face-6 {
+      animation-delay: -8.5s;
+      transform: rotateY(247.5deg) translateY(-2.2vmin) translateZ(0vmin) rotateX(-70deg)
+        scaleX(0.13) scaleY(0.33);
+    }
+    .Ring25triangle.Ring25up.Ring25face-7 {
+      animation-delay: -9.5s;
+      transform: rotateY(292.5deg) translateY(-2.2vmin) translateZ(0vmin) rotateX(-70deg)
+        scaleX(0.13) scaleY(0.33);
+    }
+    .Ring25triangle.Ring25up.Ring25face-8 {
+      animation-delay: -10.5s;
+      transform: rotateY(337.5deg) translateY(-2.2vmin) translateZ(0vmin) rotateX(-70deg)
+        scaleX(0.13) scaleY(0.33);
+    }
+    
+    /** ANIMATIONS **/
+    
+    .Ring25rotor-x {
+      transform: rotateX(-22deg) scale(2);
+    /*   will-change: transform; */
+      /* animation: spinX 6s infinite linear; */
+    }
+    .Ring25rotor-y {
+      animation: spinY 12s infinite linear;
+    }
+    .Ring25rotor-z {
+      /* animation: spinZ 18s infinite linear; */
+    }
+    @keyframes Ring25spinX {
+      0% {
+        transform: rotateX(0);
+      }
+      to {
+        transform: rotateX(1turn);
+      }
+    }
+    @keyframes spinY {
+      0% {
+        transform: rotateY(0);
+      }
+      to {
+        transform: rotateY(1turn);
+      }
+    }
+    @keyframes spinZ {
+      0% {
+        transform: rotateZ(0);
+      }
+      to {
+        transform: rotateZ(1turn);
+      }
+    }
+    @keyframes lighting {
+      0% {
+        border-bottom-color: #33afff;
+      }
+      50% {
+        border-bottom-color: #bbe8ff;
+      }
+      to {
+        border-bottom-color: #33afff;
+      }
+    }
+    @keyframes lighting-lighter {
+      0% {
+        border-bottom-color: #72c8ff;
+      }
+      50% {
+        border-bottom-color: #99eaff;
+      }
+      to {
+        border-bottom-color: #72c8ff;
+      }
+    }
+    
+    
+    
+    .Ring25circle {
+      position: relative;
+      width: 20.0vmin;
+      height: 20.0vmin;
+      top: 47vmin;
+      left: 9vmin;
+      background-image: radial-gradient(circle,#f8d675 3%,#f8d675 7%,#2e1f07 11%,#c1944c 16%,#9eb73b 23%,#f3eb08c3 50%,#bf9b60 57%,#dfa649 70%,#d8b423 84%,#bc9e25 97%,#8e6f40 99%);  border-radius:50%;
+    
+    }
+    
+    
+    .Ring25cut {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      width: 60%;
+      height: 60%;
+      background-color:var(--bg-color);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+/*27 LETTER*/
+
+.plate27{  width: 20vmin;
+  height: 20vmin;
+  width: 20vmin;
+
+  top:45vmin;
+  background: #ddd;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 2vmin 2vmin 3vmin 0 rgba(0,0,0,0.4);
+  background-image:repeating-radial-gradient(white, white 1px, transparent 1px, transparent 2px);
+  position: relative;
+  transform: rotate3d(0, 0, 9, -45deg);
+
+}
+.plate27::after {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  top:.2vmin;
+  bottom: 0;
+  width: 12vmin;
+  height: 12vmin;
+  background-color: #e9e9e9;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing:border-box;
+  box-shadow: inset 2vmin 2vmin 2vmin 0 #aaa,
+              inset -2vmin -2vmin 2vmin 0 white;
+              transform: rotate3d(0, 0, 9, -45deg);
+
+}
+
+
+.pic27{
+
+  height: 10vmin;
+  width: 16vmin;
+  top: 55vmin;
+  left: 13vmin;
+  background: #efefef;
+  border-radius: .5vmin;
+  background-image: 
+  linear-gradient(90deg, #fc3636 17%, transparent 17%), 
+  linear-gradient(90deg, transparent 83%, #fc3636 83%), 
+  linear-gradient(147deg, #e3e3e390 59%, transparent 50%), 
+  linear-gradient(-134deg, #e8e8e8 63%, transparent 50%);
+  position: absolute;
+  overflow: hidden;
+  transform: rotate3d(.09, .033, 1, -70deg);
+  z-index:0;
+  border:1px solid grey;
+
+}
+.pic27:before {
+  content: '';
+  position: absolute;
+  width: 21vmin;
+  height: 12vmin;
+  top: -9vmin;
+  left: -6vmin;
+  box-shadow: 1vmin 1vmin 2vmin #000;
+  background: #efefef;
+  border-right: 2vmin solid #fc3636;
+  border-bottom: 2vmin solid #fc3636;
+  transform: rotate(50deg) skewY(-6deg);
+}
+
+
+
+
+
+/*33 KEY*/
+
+.pic33{
+  position: absolute;
+  border: 2vmin solid #50501D;
+  border-radius: 50%;
+  height: 7vmin;
+  width: 15vmin;
+  top:32vmin;
+  left:12vmin;
+}
+
+
+
+.pic33:before {
+    content: "";
+
+  position: absolute;
+  left: 4vmin;
+  top: 3.5vmin;
+  background: #50501D;
+  border-radius: 5vmin;
+  height: 38vmin;
+  width: 2.5vmin;
+}
+
+.pic33:after {
+  content: "";
+  position: absolute;
+  bottom: -40vmin;
+  left: 6vmin;
+  width: 0;
+  height: 0;
+  border-left: 3vmin dotted transparent;
+  border-right: 3vmin dotted transparent;
+  border-bottom: 10vmin solid #50501D;
+  transform: rotate(-90deg);
+}
+/*34 FISH*/
+
+.fish-body {
+  position: absolute;
+  background-color: crimson;
+  width: 12vmin;
+  height: 17vmin;
+  border: 1vmin solid firebrick;
+  top: 16vmin;
+  left: -16vmin;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10vmin;
+}
+
+.fish-body2 {
+  position: absolute;
+  background-color: crimson;
+  width: 12vmin;
+  height: 17vmin;
+  border: 1vmin solid firebrick;
+  top: 50vmin;
+  left: 16vmin;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10vmin;
+}
+/* mouth */
+.fish-bodymouth {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 3vmin;
+  height: 5.2vmin;
+  background-color: transparent;
+  border: .7vmin solid lightpink;
+  border-radius: 3vmin;
+}
+/* eye */
+.fish-bodyeye-1 {
+  background-color: black;
+  height: 3.3vmin;
+  width: 3.3vmin;
+  position: absolute;
+  border-radius: 50%;
+  top: 4.5vmin;
+  left: -.2vmin;
+}
+.fish-bodyeye-2 {
+  background-color: black;
+  height: 3.3vmin;
+  width: 3.3vmin;
+  position: absolute;
+  border-radius: 50%;
+  top: 4.5vmin;
+  left: 7vmin;
+}
+/* fing -top */
+.fish-bodyfin-top {
+  background-color: #ffcc33;
+  width: 2vmin;
+  height: 5vmin;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  top: -21.8vmin;
+  border-radius: 2vmin;
+  z-index: 1;
+  border-bottom-left-radius: 1vmin;
+  border-bottom-right-radius: 1vmin;
+}
+.fish-bodyfin-top::before,
+.fish-bodyfin-top::after {
+  content: '';
+  position: absolute;
+  background-color: #ffcc33;
+  width: 2vmin;
+  height: 5vmin;
+  transform-origin: bottom;
+  border-bottom-left-radius: 1vmin;
+  
+  border-bottom-right-radius: 1vmin;
+  border-radius: 2vmin;
+  top: -.3vmin;
+}
+.fish-bodyfin-top::before {
+  transform: rotate(40deg);
+}
+.fish-bodyfin-top::after {
+  transform: rotate(-40deg);
+}
+/* fing bottom */
+.fish-bodyfin-bottom {
+  background-color: #ffcc33;
+  width: 2vmin;
+  height: 5vmin;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  top: 18.9vmin;
+  border-radius: 3vmin;
+  
+  border-top-left-radius: 2vmin;
+  border-top-right-radius: 2vmin;
+}
+.fish-bodyfin-bottom::before,
+.fish-bodyfin-bottom::after {
+  content: "";
+  position: absolute;
+  background-color: #ffcc33;
+  width: 2vmin;
+  height: 5vmin;
+  border-radius: 5vmin;
+  top: .5vmin;
+ 
+  border-top-left-radius: 2vmin;
+  border-top-right-radius: 2vmin;
+  transform-origin: top;
+}
+.fish-bodyfin-bottom::after {
+  transform: rotate(40deg);
+}
+.fish-bodyfin-bottom::before {
+  transform: rotate(-40deg);
+}
+/*moustache */
+.fish-bodymoustache-1,
+.fish-bodymoustache-2 {
+  height: 6vmin;
+  width: 1vmin;
+  border: .6vmin solid #ffcc33;
+  position: absolute;
+  top: 11vmin;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 2vmin 0 0 0;
+}
+.fish-bodymoustache-2 {
+  left: 9vmin;
+  transform: rotateY(180deg);
+}
+.fish-bodymoustache-1::before,
+.fish-bodymoustache-2::before {
+  content: "";
+  position: absolute;
+  height: 1vmin;
+  width: 2vmin;
+  border: .6vmin solid #ffcc33;
+
+  border-top: none;
+  top: 5vmin;
+  left: -2vmin;
+  border-radius:0 0 1vmin 1vmin;
+  
+  transform: rotateY(180deg);
+}
+/* gills */
+.fish-bodygill1 {
+  background-color: firebrick;
+  position: absolute;
+  width: 1vmin;
+  height: 5vmin;
+  top: 9vmin;
+  transform-origin: top;
+  transform: rotate(90deg);
+  left: -.8vmin;
+  border-radius: 1vmin;
+}
+.fish-bodygill1::before {
+  background-color: firebrick;
+  position: absolute;
+  content: "";
+  width: 1vmin;
+  height: 5vmin;
+  border-radius: 1vmin;
+  transform-origin: top;
+  transform: rotate(45deg);
+}
+.fish-bodygill1::after {
+  background-color: firebrick;
+  position: absolute;
+  content: "";
+  width: 1vmin;
+  height: 5vmin;
+  border-radius: 1vmin;
+  transform-origin: top;
+  transform: rotate(-45deg);
+}
+.fish-bodygill2 {
+background-color: firebrick;
+width: 1vmin;
+height: 5vmin;
+position: absolute;
+left: 10vmin;
+top: 9vmin;
+transform-origin: top;
+transform: rotate(-90deg);
+border-radius: 2vmin;
+}
+.fish-bodygill2::before {
+position: absolute;
+content: "";
+width: 1vmin;
+height: 5vmin;
+background-color: firebrick;
+border-radius: 1vmin;
+transform-origin: top;
+transform: rotate(45deg);
+}
+.fish-bodygill2::after {
+  position: absolute;
+  content: "";
+  width: 1vmin;
+  height: 5vmin;
+  background-color: firebrick;
+  border-radius: 1vmin;
+  transform-origin: top;
+  transform: rotate(-45deg);
+}
+.fish-bodygill-background1 {
+  border: 5.5vmin solid rgba(178, 34, 34, 0.267);
+  position: absolute;
+  top: 4vmin;
+  left: -5vmin;
+  border-right: 5vmin solid transparent;
+  border-top: 5vmin solid transparent;
+  border-left: 5vmin solid transparent;
+  transform: rotate(90deg);
+  border-radius: 50vmin;
+}
+.fish-bodygill-background2 {
+  border: 5.5vmin solid rgba(178, 34, 34, 0.322);
+  position: absolute;
+  top: 4vmin;
+  left: 7.2vmin;
+  border-right: 5vmin solid transparent;
+  border-top: 5vmin solid transparent;
+  border-left: 5vmin solid transparent;
+  transform: rotate(-90deg);
+  border-radius: 5vmin;
+}
+
+/*35 ANCHOR*/
+  
+    .anchor {
+      color: black;
+      position: relative;
+      margin-left:-2vmin;
+      margin-top: 45vmin;
+      width: calc(130vmin/4);
+      height: calc(65vmin/4);
+      border-radius: 0 0 calc(130vmin/4) calc(130vmin/4);
+      border: solid calc(10vmin/4) currentColor;
+      border-top:transparent;
+      transform: rotate(45deg);
+    
+    }
+    
+    .anchor:before, .anchor:after {
+      content: '';
+      position: absolute;
+      left: calc(-25vmin/4);
+      top: calc(-40vmin/4);
+      width: 0;
+      height: 0;
+      border: solid calc(20vmin/4) transparent;
+      border-bottom-color: currentcolor;
+    }
+    
+    .anchor:after {
+      left: calc(95vmin/4);
+    }
+    .anchor i {
+      position: absolute;
+      width: calc(40vmin/4);
+      height: calc(40vmin/4);
+      top:calc(-70vmin/4);
+      left: calc(35vmin/4);
+      border-radius:100%;
+      border: solid calc(10vmin/4) currentcolor;
+    }
+    .anchor i:before {
+      content:'';
+      position: absolute;
+      width:calc(10vmin/4);
+      height:calc(100vmin/4);
+      top: calc(20vmin/4);
+      left:calc(5vmin/4);
+      background:currentcolor;
+      
+    }
+
+/*30 LILY*/ 
+    
+    .lirios30{
+      position:relative;
+      box-sizing: border-box;
+      width: 30vmin;
+      height: 40vmin;
+      margin-left: 5vmin;
+      margin-top: 28vmin;
+      background: repeating-linear-gradient(to bottom,rgb(154, 67, 67),#d2691e 20%) 48.5% 75%/4vmin 2vmin,
+      
+    
+      linear-gradient(120deg,rgba(205,133,63,0) 10%,#2d8b08 11%,#cd853f 89%,rgba(205,133,63,0) 90%) 50% 100%/1vmin 100%,
+    
+      linear-gradient(70deg,rgba(210,105,30,0) 10%,#d2691e 11%,#d2691e 89%,rgba(210,105,30,0) 90%) 48% 110%/1vmin 86%,
+      
+        linear-gradient(60deg,rgba(255,255,255,0) 55%,green 55.5%,grey 56.5%,rgba(255,255,255,0) 57%) 20% 80%/16vmin 60%,
+    
+      linear-gradient(-71deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 80% 70%/15vmin 90%,
+      linear-gradient(101deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 60% 10%/15vmin 90%,
+       linear-gradient(71deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 20% 70%/15vmin 90%,
+    
+        linear-gradient(77deg,rgba(210,105,30,0) 55%,yellow 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 30% 70%/12vmin 90%,
+    
+       linear-gradient(-61deg,rgba(210,105,30,0) 55%,green 56%,rgba(23, 193, 11, 0.2) 56.5%,rgba(210,105,30,0) 61.5%) 90% 200%/20vmin 90%
+      ;
+    
+      
+    
+      background-repeat: no-repeat;
+    }
+    
+    .lirios30::before{
+      content:"";
+      width: 5vmin;
+      height: 6vmin;
+      left: 10vmin;
+      top: 40vmin;
+      border-top-left-radius: 60%;
+      border-bottom-right-radius: 60%;
+      box-shadow: 5vmin 12vmin 1vmin 1vmin purple,
+      5vmin 13vmin 1vmin 1vmin red,
+      1vmin 6vmin 1vmin 1vmin rgba(210,105,30,0.2),
+      14vmin 7vmin 1vmin 1vmin red,
+    
+      5vmin 2vmin 1vmin 1vmin purple,
+      15vmin 3vmin 1vmin 1vmin purple,
+      16vmin 3vmin 1vmin 1vmin orange,
+    
+      24vmin 2vmin 1vmin 1vmin purple,
+      24vmin 3vmin 1vmin 1vmin white,
+    
+      27vmin 8vmin 1vmin 1vmin purple,
+      27vmin 9vmin 1vmin 1vmin yellow,
+    
+      21.5vmin -.9vmin 1vmin 1vmin purple,
+      22.5vmin -.9vmin 1vmin 1vmin red,
+    
+      8vmin 2vmin 1vmin 1vmin purple,
+      9vmin 2vmin 1vmin 1vmin red
+    
+    
+    
+    
+    
+    
+      
+    
+    }
+    .lirios30::after{
+      content:"";
+      width: 5vmin;
+      height: 6vmin;
+      left: -4vmin;
+      top: -8vmin;
+      border-top-right-radius: 60%;
+      border-bottom-left-radius: 60%;
+      box-shadow:  5vmin 11vmin 1vmin 1vmin hotpink,
+      1vmin -2vmin 2vmin 2vmin rgba(210,105,30,0.2),
+      4vmin 2vmin 1vmin 1vmin #a52a2a;
+    }
+    
+    .lirio {
+      position:absolute;
+      width: 9vmin;
+      height: 10.5vmin;
+        top:38vmin;
+        left:15vmin;
+    
+    
+    
+    }
+    
+    
+    
+    
+    .lirio .lirios30container {
+      position: absolute;
+    
+    }
+    .lirio .lirios30container.lirios30container-2 {
+      width: 4.5vmin;
+      left: 4.4vmin;
+      transform: scaleX(-1);
+      
+      
+    }
+    
+    
+    .lirio .lirios30container.lirios30container-2 .lirios30top-filter {
+      width: 100vmin;
+      height: 10.5vmin;
+      mix-blend-mode: soft-light;
+      position: absolute;
+        top:-15vmin;
+    
+    }
+    
+    .lirio .lirios30container .lirios30line1 {
+      position: absolute;
+      left: 0;
+      top: 1vmin;
+      width: 4.5vmin;
+      height: 9.5vmin;
+      background-color: #6a2c70;
+      border-top: none;
+      border-right: none;
+      border-bottom-left-radius: 4vmin;
+    }
+    
+    
+    .lirios30line1::before{content:"";
+      position: absolute;
+      left: 12vmin;
+      top: 3vmin;
+      width: 4.5vmin;
+      height: 9.5vmin;
+      background-color: #6a2c70;
+      border-top: none;
+      border-right: none;
+      border-bottom-left-radius: 4vmin;
+      transform: rotate(30deg);
+    }
+    .lirios30line1::after{content:"";
+      position: absolute;
+      left: 15.5vmin;
+      top: 5vmin;
+      width: 4.5vmin;
+      height: 9.5vmin;
+      background-color: #6a2c70;
+      border-top: none;
+      border-right: none;
+      border-bottom-right-radius: 4vmin;
+      transform: rotate(30deg);
+    }
+    
+    
+    .lirio .lirios30container .lirios30line2 {
+      position: absolute;
+      left: 1.5vmin;
+      top: .5vmin;
+      width: 3vmin;
+      height: 8.5vmin;
+      background: #b83b5e;
+      border-top: none;
+      border-right: none;
+      border-bottom-left-radius: 3vmin;
+      
+    }
+    
+    
+    .lirios30line2::after{
+      content:"";
+      position: absolute;
+      left: 12vmin;
+      top: 4vmin;
+      width: 6vmin;
+      height: 8.5vmin;
+      background: #b83b5e;
+      border-top: none;
+      border-right: none;
+      border-bottom-right-radius: 3vmin;
+      border-bottom-left-radius: 3vmin;
+    
+      transform: rotate(30deg);
+    
+    }
+    
+    .lirio .lirios30container .lirios30line3 {
+      position: absolute;
+      left: 3vmin;
+      width: 1.5vmin;
+      height: 7vmin;
+      background: #f08a5d;
+      border-top: none;
+      border-right: none;
+      border-bottom-left-radius: 2vmin;
+      
+    }
+    
+    
+    .lirios30line3::before{
+      content:"";
+      position: absolute;
+      left: 13vmin;
+      top:4vmin;
+      width: 3vmin;
+      height: 7vmin;
+      background: #f08a5d;
+      border-top: none;
+      border-right: none;
+      border-bottom-left-radius: 2vmin;
+      border-bottom-right-radius: 2vmin;
+    
+      transform: rotate(30deg);
+    }
+    
+    
+/*36 Cross*/
+
+       .container36Cross {
+          position:relative;
+          top: 20vmin;
+          left: 6vmin;
+         width: 20vw;
+         height: 50vmin;
+        }
+        
+        .cross36 { 
+             height: 90%;
+             width: 2vmin;
+             position: absolute; 
+           top:3vmin; 
+           left: 12vmin;
+             background-color: #000; 
+          } 
+             .cross36::before { 
+             content:""; 
+             position: absolute; 
+             top: 25%; 
+             right: 100%; 
+             width: 7vmin; 
+             height: 2vmin; 
+             background-color: #000; 
+          } 
+        
+          .cross36::after { 
+             content:""; 
+             position: absolute; 
+             top: 25%; 
+             left: 100%; 
+             width: 7vmin; 
+             height: 2vmin; 
+             background-color: #000; 
+          } 
+
+/*website style*/
+
+
+
+
+/*
+
+.navigation ul{
+  display: flex;
+  list-style: none;
+}
+.navigation ul li{
+  margin: 20px;
+  color: white;
+  font-family: Roman;
+}
+
+
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-size: cover;
+    color: white;
+    text-align: center;
+      box-sizing: border-box;
+
+}
+
+
+
+.bg{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background-image: url(images/bg.png);
+  background-size: cover;
+  filter: blur(3px) brightness(60%); 
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+*/
+
+/* For mobile phones: */
+[class*="parent"] {
+
+}
+
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  .parent {   
+    width: 100%;
+    display: block;
+}
+#tirage{
+  border-radius: 0.7em;
+  list-style: none;
+  width: 40vmin;
+  justify-content: space-around;
+  background-position: center;
+  margin: 1vmin;
+  align-items: center;
+  display: flex;
+  left: 22vmin;
+  position: relative;
+}
+
+
+
+}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .pparent {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
