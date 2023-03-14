@@ -70,7 +70,7 @@ box-shadow: 0 0 .5vmin silver;
 }
 
   .parent {
-    display: flex;
+      display: flex;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     /* grid-column-gap: 0px; */
@@ -78,7 +78,7 @@ box-shadow: 0 0 .5vmin silver;
     /* align-items: baseline; */
     /* align-content: space-evenly; */
     /* justify-items: center; */
-    /* justify-content: space-between; */
+    justify-content: center;
     flex-wrap: wrap;
     left: 10vmin;
     position: relative;
