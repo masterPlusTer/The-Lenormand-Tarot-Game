@@ -55,17 +55,17 @@
 
 button {
   background: none;
-  border:1vmin solid white;
+  border: 1vmin solid white;
   border-radius: 5vmin;
-  padding:.5vmin 5vmin;
-  background-color:grey;
+  padding: .5vmin 5vmin;
+  background-color: #f4dfdf;
   font-size: 5vmin;
   cursor: pointer;
   background-position: center;
-
-align-items: center;   
-justify-content: flex-end; 
-box-shadow: 0 0 .5vmin silver;
+  align-items: center;
+  color: brown;
+  justify-content: flex-end;
+  box-shadow: 0 0 .5vmin silver;
 
 }
 
